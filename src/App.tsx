@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className='w-svw h-svh bg-background text-foreground dark'>
-      <Header setLang={setLang} />
+      <Header lang={lang} setLang={setLang} />
       <NavBar
         activeSection={activeSection}
         translation={translation}
