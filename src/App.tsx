@@ -1,22 +1,31 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import FullPageScroll from './components/full-page-scroll/full-page-scroll'
 import FullPageSection from './components/full-page-scroll/full-page-section'
 import Header from './components/header/header'
 import NavBar from './components/nav/nav-bar'
+import { getTranslation, ITranslation, LangOptions } from './lib/lang/lang'
 
 function App() {
   const [activeSection, setActiveSection] = useState('#section_home')
+  const [lang, setLang] = useState<LangOptions>(LangOptions.EN)
+  const [translation, setTranslation] = useState<ITranslation>(getTranslation(lang))
 
   const headerPadding = 'pt-16'
 
+  useEffect(() => {
+    setTranslation(getTranslation(lang))
+  }
+    , [lang])
+
   return (
     <div className='w-svw h-svh bg-slate-900'>
-      <Header/>
+      <Header setLang={setLang} />
       <NavBar
-        activeSection={activeSection} 
+        activeSection={activeSection}
+        translation={translation}
       />
       <FullPageScroll
-      className='max-w-[1200px] mx-auto'
+        className='max-w-[1200px] mx-auto'
       >
         <FullPageSection
           id='section_home'

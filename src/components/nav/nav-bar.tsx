@@ -1,5 +1,8 @@
+import { ITranslation } from '@/lib/lang/lang'
+
 interface NavBarProps {
   activeSection: string
+  translation: ITranslation
 }
 
 interface IAppAnchor {
@@ -7,15 +10,14 @@ interface IAppAnchor {
   label: string
 }
 
-export default function NavBar({ activeSection }: NavBarProps) {
-
+export default function NavBar({ activeSection, translation }: NavBarProps) {
   const anchor: IAppAnchor[] = [
-    { href: '#section_home', label: 'Home' },
-    { href: '#section_skills', label: 'Skills' },
-    { href: '#section_projects', label: 'Projects' },
-    { href: '#section_services', label: 'Services' },
-    { href: '#section_about', label: 'About' },
-    { href: '#section_contacts', label: 'Contacts' }
+    { href: '#section_home', label: translation.nav_items.home },
+    { href: '#section_skills', label: translation.nav_items.skills },
+    { href: '#section_projects', label: translation.nav_items.projects },
+    { href: '#section_services', label: translation.nav_items.services },
+    { href: '#section_about', label: translation.nav_items.about },
+    { href: '#section_contacts', label: translation.nav_items.contact }
   ]
 
   return (
