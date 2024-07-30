@@ -1,9 +1,14 @@
 import { useEffect, useState } from 'react'
 import FullPageScroll from './components/full-page-scroll/full-page-scroll'
-import FullPageSection from './components/full-page-scroll/full-page-section'
 import Header from './components/header/header'
 import NavBar from './components/nav/nav-bar'
 import { getTranslation, ITranslation, LangOptions } from './lib/lang/lang'
+import HomeSection from './sections/home'
+import SkillsSection from './sections/skills'
+import ProjectsSection from './sections/projects'
+import ServicesSection from './sections/services'
+import AboutSection from './sections/about'
+import ContactsSection from './sections/contacts'
 
 function App() {
   const [activeSection, setActiveSection] = useState('#section_home')
@@ -18,7 +23,7 @@ function App() {
     , [lang])
 
   return (
-    <div className='w-svw h-svh bg-slate-900'>
+    <div className='w-svw h-svh bg-background text-foreground dark'>
       <Header setLang={setLang} />
       <NavBar
         activeSection={activeSection}
@@ -27,47 +32,35 @@ function App() {
       <FullPageScroll
         className='max-w-[1200px] mx-auto'
       >
-        <FullPageSection
-          id='section_home'
+        <HomeSection
           setActiveSection={setActiveSection}
-          className={`bg-gray-400 ${headerPadding}`}>
-          <h1 className='text-4xl font-bold text-center text-gray-800'>Home</h1>
-        </FullPageSection>
+          className={headerPadding}
+        />
 
-        <FullPageSection
-          id='section_skills'
+        <SkillsSection
           setActiveSection={setActiveSection}
-          className={`bg-green-400 ${headerPadding}`}>
-          <h1 className='text-4xl font-bold text-center text-gray-800'>Skills</h1>
-        </FullPageSection>
+          className={headerPadding}
+        />
 
-        <FullPageSection
-          id='section_projects'
+        <ProjectsSection
           setActiveSection={setActiveSection}
-          className={`bg-blue-400 ${headerPadding}`}>
-          <h1 className='text-4xl font-bold text-center text-gray-800'>Projects</h1>
-        </FullPageSection>
+          className={headerPadding}
+        />
 
-        <FullPageSection
-          id='section_services'
+        <ServicesSection
           setActiveSection={setActiveSection}
-          className={`bg-red-400 ${headerPadding}`}>
-          <h1 className='text-4xl font-bold text-center text-gray-800'>Services</h1>
-        </FullPageSection>
+          className={headerPadding}
+        />
 
-        <FullPageSection
-          id='section_about'
+        <AboutSection
           setActiveSection={setActiveSection}
-          className={`bg-yellow-400 ${headerPadding}`}>
-          <h1 className='text-4xl font-bold text-center text-gray-800'>About</h1>
-        </FullPageSection>
+          className={headerPadding}
+        />
 
-        <FullPageSection
-          id='section_contacts'
+        <ContactsSection
           setActiveSection={setActiveSection}
-          className={`bg-purple-400 ${headerPadding}`}>
-          <h1 className='text-4xl font-bold text-center text-gray-800'>Contacts</h1>
-        </FullPageSection>
+          className={headerPadding}
+        />
       </FullPageScroll>
     </div>
   )

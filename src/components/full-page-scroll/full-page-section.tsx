@@ -25,7 +25,7 @@ export default function FullPageSection({ id, children, className, setActiveSect
     <section
       id={id}
       ref={sectionRef}
-      className={cn('flex flex-col items-start justify-start w-full h-svh [scroll-snap-align:_start]', className)}
+      className={cn('bg-transparent flex flex-col items-start justify-start w-full h-svh [scroll-snap-align:_start]', className)}
     >
       {children}
     </section>
