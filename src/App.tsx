@@ -15,7 +15,7 @@ function App() {
   const [lang, setLang] = useState<LangOptions>(LangOptions.EN)
   const [translation, setTranslation] = useState<ITranslation>(getTranslation(lang))
 
-  const headerPadding = 'pt-16'
+  const headerPadding = 'pt-32 sm:pt-16'
 
   useEffect(() => {
     setTranslation(getTranslation(lang))
@@ -23,7 +23,7 @@ function App() {
     , [lang])
 
   return (
-    <div className='w-svw h-svh bg-background text-foreground dark'>
+    <div className='w-svw h-screen bg-background text-foreground dark'>
       <Header lang={lang} setLang={setLang} />
       <NavBar
         activeSection={activeSection}
