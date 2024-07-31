@@ -35,7 +35,7 @@ function App() {
         <HomeSection
           translation={translation}
           setActiveSection={setActiveSection}
-          className={`px-16 ${headerPadding}`}
+          className={`px-4 sm:px-16 ${headerPadding}`}
         />
 
         <SkillsSection
