@@ -8,14 +8,13 @@ import SkillsSection from './sections/skills'
 import ProjectsSection from './sections/projects'
 import ServicesSection from './sections/services'
 import AboutSection from './sections/about'
-import ContactsSection from './sections/contacts'
 
 function App() {
   const [activeSection, setActiveSection] = useState('#section_home')
   const [lang, setLang] = useState<LangOptions>(LangOptions.EN)
   const [translation, setTranslation] = useState<ITranslation>(getTranslation(lang))
 
-  const headerPadding = 'pt-32 sm:pt-16'
+  const headerPadding = 'pt-32 md:pt-16'
 
   useEffect(() => {
     setTranslation(getTranslation(lang))
@@ -35,7 +34,7 @@ function App() {
         <HomeSection
           translation={translation}
           setActiveSection={setActiveSection}
-          className={`px-4 sm:px-16 ${headerPadding}`}
+          className={`px-4 md:px-16 ${headerPadding}`}
         />
 
         <SkillsSection
