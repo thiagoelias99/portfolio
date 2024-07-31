@@ -8,6 +8,9 @@ export enum LangOptions {
 
 export interface ITranslation {
   name: string,
+  linkedIn: string,
+  github: string,
+  email: string,
   nav_items: {
     home: string
     skills: string

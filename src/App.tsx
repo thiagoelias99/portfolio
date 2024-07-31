@@ -57,11 +57,6 @@ function App() {
           setActiveSection={setActiveSection}
           className={headerPadding}
         />
-
-        <ContactsSection
-          setActiveSection={setActiveSection}
-          className={headerPadding}
-        />
       </FullPageScroll>
     </div>
   )

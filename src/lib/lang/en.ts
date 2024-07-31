@@ -2,6 +2,9 @@ import { ITranslation } from './lang';
 
 export const EN: ITranslation = {
   name: "Thiago Elias",
+  linkedIn: "https://www.linkedin.com/in/eng-thiagoelias/",
+  github: "https://github.com/thiagoelias99",
+  email: "thiagoelias99@gmail.com",
   nav_items: {
     home: 'Home',
     skills: 'Skills',
