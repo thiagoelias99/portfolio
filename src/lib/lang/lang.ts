@@ -7,6 +7,7 @@ export enum LangOptions {
 }
 
 export interface ITranslation {
+  name: string,
   nav_items: {
     home: string
     skills: string
@@ -14,6 +15,14 @@ export interface ITranslation {
     services: string
     about: string
     contact: string
+  },
+  home: {
+    title: string,
+    phrase: string,
+    welcome: string,
+    firstSkill: string,
+    secondSkill: string,
+    coverAlt: string
   }
 }
 

@@ -21,7 +21,7 @@ export default function NavBar({ activeSection, translation }: NavBarProps) {
   ]
 
   return (
-    <nav className='h-full bg-transparent fixed right-0 top-0 translate-y-20 px-8'>
+    <nav className='h-full bg-transparent fixed right-0 top-0 translate-y-20 px-8 z-30'>
       <ul className='flex flex-col justify-center items-end gap-2'>
         {anchor.map((item, index) => (
           <li key={index}

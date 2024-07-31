@@ -30,11 +30,12 @@ function App() {
         translation={translation}
       />
       <FullPageScroll
-        className='max-w-[1200px] mx-auto'
+        className=''
       >
         <HomeSection
+          translation={translation}
           setActiveSection={setActiveSection}
-          className={headerPadding}
+          className={`px-16 ${headerPadding}`}
         />
 
         <SkillsSection
