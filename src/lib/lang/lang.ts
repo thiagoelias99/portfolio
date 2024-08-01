@@ -6,6 +6,17 @@ export enum LangOptions {
   EN = 'en'
 }
 
+export interface ISkill{
+  name: string,
+  description: string
+  imageUrl: string,
+  stacks: IStack[]
+}
+
+export interface IStack {
+  name: string
+}
+
 export interface ITranslation {
   name: string,
   linkedIn: string,
@@ -26,6 +37,10 @@ export interface ITranslation {
     firstSkill: string,
     secondSkill: string,
     coverAlt: string
+  },
+  skills: {
+    title: string,
+    skills: ISkill[]
   }
 }
 

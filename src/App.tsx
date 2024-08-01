@@ -38,6 +38,7 @@ function App() {
         />
 
         <SkillsSection
+          translation={translation}
           setActiveSection={setActiveSection}
           className={headerPadding}
         />
