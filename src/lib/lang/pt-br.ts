@@ -96,7 +96,7 @@ export const PT_BR: ITranslation = {
           { name: "C++" },
           { name: "Rust" },
           { name: "Tauri" },
-          { name: "Vite"},
+          { name: "Vite" },
           { name: "SQLite" }
         ]
       },
@@ -124,6 +124,66 @@ export const PT_BR: ITranslation = {
           { name: "Wifi" },
           { name: "Bluetooth" },
           { name: "MQTT" }
+        ]
+      }
+    ]
+  },
+  projects: {
+    title: "Projetos",
+    projects: [
+      {
+        name: "Planner",
+        description: "Sistema proprietário desenvolvido para minha organização pessoal. Reúne funcionalidades de diversos aplicativos comumente utilizados para organização pessoal, financeira e profissional, porém integrados, possibilitando um controle e monitoramento automático em uma única tela.",
+        imageUrl: "/projects/cards/planner_main.png",
+        stacks: [
+          { name: "Nest.JS" },
+          { name: "Next.JS" },
+          { name: "Typescript" },
+          { name: "Tailwind CSS" },
+          { name: "Prisma" },
+          { name: "PostgreSQL" },
+          { name: "Pupperteer" }
+        ]
+      },
+      {
+        name: "Imagem para Texto",
+        description: "Projeto de inteligência artificial desenvolvido com o objetivo de gerar descrição textual de imagens (alt) para ajudar na acessibilidade de sites e aplicativos.",
+        imageUrl: "/projects/cards/image_text_main.png",
+        stacks: [
+          { name: "Google AI Studio" },
+          { name: "Gemini AI" },
+          { name: "Next.JS" },
+          { name: "Typescript" },
+          { name: "Tailwind CSS" },
+          { name: "Radix UI" }
+        ]
+      },
+      {
+        name: "FSW Food",
+        description: "Projeto proposto pela escola Full Stack Club, mas desenvolvido de acordo com minha escolha de tecnologias, onde o objetivo é criar a interface, autenticação e algumas regras de negócio de uma aplicação de delivery de comidas.",
+        imageUrl: "/projects/cards/fsw_food_main.png",
+        stacks: [
+          { name: "Next.JS" },
+          { name: "TypeScript" },
+          { name: "Tailwind CSS" },
+          { name: "Next Auth"},
+          { name: "Firebase" },
+          { name: "Prisma" },
+          { name: "PostgreSQL" }
+        ]
+      },
+      {
+        name: "Trazler",
+        description: "Projeto front-end desenvolvido para a pós-graduação de desenvolvimento fullstack utilizando a tecnologia Jamstack com Next e Gatsby, simulando um blog de destinos de viagem, com artigos escritos na liguagem .mdx.",
+        imageUrl: "/projects/cards/trazler_main.png",
+        stacks: [
+          { name: "Jamstack" },
+          { name: "Next.JS" },
+          { name: "Gatsby" },
+          { name: "MDX" },
+          { name: "Tailwind CSS" },
+          { name: "Firebase" },
+          { name: "Firestore" }
         ]
       }
     ]

@@ -44,6 +44,7 @@ function App() {
         />
 
         <ProjectsSection
+          translation={translation}
           setActiveSection={setActiveSection}
           className={headerPadding}
         />

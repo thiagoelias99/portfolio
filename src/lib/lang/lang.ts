@@ -6,7 +6,7 @@ export enum LangOptions {
   EN = 'en'
 }
 
-export interface ISkill{
+export interface ISkill {
   name: string,
   description: string
   imageUrl: string,
@@ -15,6 +15,13 @@ export interface ISkill{
 
 export interface IStack {
   name: string
+}
+
+export interface IProject {
+  name: string,
+  description: string,
+  imageUrl: string,
+  stacks: IStack[]
 }
 
 export interface ITranslation {
@@ -41,6 +48,10 @@ export interface ITranslation {
   skills: {
     title: string,
     skills: ISkill[]
+  },
+  projects: {
+    title: string,
+    projects: IProject[]
   }
 }
 
