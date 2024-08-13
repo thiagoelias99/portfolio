@@ -20,20 +20,21 @@ export default function HomeSection({ translation, setActiveSection, className }
       setActiveSection={setActiveSection}
       className={cn('text-foreground flex flex-col justify-start relative max-w-screen-xl mx-auto', className)}
     >
-      <section className="mt-8 w-full h-full bg-transparent">
+      <section className="mt-2 md:mt-8 w-full h-full bg-transparent overflow-x-clip">
         <div className='relative w-full h-full flex flex-col'>
-          <h1 className='text-base md:text-xl md:mt-14 lg:text-2xl lg:mt-20'>{translation.home.hello}<strong className='text-primary text-3xl md:text-4xl lg:text-6xl font-serif font-semibold'>{translation.name}</strong></h1>
-          <div className={cn('mt-0 lg:mt-4 flex flex-row gap-1 lg:gap-4 text-start p-0 text-xl lg:text-4xl font-semibold items-start w-full', translation.lang === LangOptions.PT_BR ? "flex-row-reverse justify-end" : "")}>
+          <h1 className='text-xl md:mt-14 lg:text-2xl lg:mt-20'>{translation.home.hello}<strong className='text-primary text-4xl lg:text-6xl font-serif font-semibold'>{translation.name}</strong></h1>
+          <div className={cn('mt-0 lg:mt-4 flex flex-row gap-1 lg:gap-4 text-start p-0 text-2xl lg:text-4xl font-semibold items-start w-full', translation.lang === LangOptions.PT_BR ? "flex-row-reverse justify-end" : "")}>
             <h3><FlipWords words={translation.home.words} /></h3>
             <h2>{translation.home.title}</h2>
           </div>
-          <button className='w-56 mt-6 border-primary border-4 rounded px-6 py-2 text-primary text-base lg:text-lg font-semibold'>{translation.home.contact}</button>
-
           <img
             src={coverPhoto}
             alt={translation.home.coverAlt}
-            className='absolute w-full top-0 right-0 object-cover md:rounded-none opacity-80 translate-x-10'
+            draggable={false}
+            className='md:absolute -translate-x-14 md:translate-x-16 w-full mt-2 top-0 right-0 object-cover md:rounded-none opacity-80'
           />
+          <button className='w-56 mt-8 md:mt-6 self-center md:self-auto border-primary border-4 rounded px-6 py-2 text-primary text-base lg:text-lg font-semibold'>{translation.home.contact}</button>
+
         </div>
       </section>
       <SectionScrollDown className="absolute bottom-0" />

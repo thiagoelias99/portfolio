@@ -20,7 +20,7 @@ export default function NavBar({ activeSection, translation }: NavBarProps) {
   ]
 
   return (
-    <nav className='w-full lg:w-auto h-auto bg-background lg:bg-transparent fixed right-0 top-0 translate-y-16 lg:translate-y-20 px-1 lg:px-8 z-30'>
+    <nav className='w-full lg:w-auto h-auto bg-background lg:bg-transparent fixed right-0 top-0 translate-y-16 lg:translate-y-20 pb-2 lg:pb-0 px-1 lg:px-8 z-30'>
       <ul className='flex lg:flex-col justify-evenly lg:justify-center items-end gap-x-4 lg:gap-2 flex-wrap lg:flex-nowrap'>
         {anchor.map((item, index) => (
           <li key={index}
@@ -32,6 +32,7 @@ export default function NavBar({ activeSection, translation }: NavBarProps) {
             >
               {item.label}
             </a>
+            {activeSection === item.href && <div className='h-0.5 rounded-sm w-full bg-primary'></div>}
           </li>
         ))}
       </ul>
