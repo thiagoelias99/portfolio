@@ -214,6 +214,14 @@ export const EN: ITranslation = {
       "Graduated in electronic engineering, with emphasis on embedded devices, programming, automation, and control.",
       "Specialist in the development of modern web, desktop, and mobile applications, integrating wifi, bluetooth, and iot connectivities.",
       "Developer of applications for business management with integration of dashboard, indicators, forms, and databases."
-    ]
+    ],
+    skills: "Skills",
+    skillsNote: "These are some of the technologies I use the most currently, but I'm always learning new technologies and tools to improve my skills.",
+    webFramework: "Web Framework",
+    mobileFramework: "Mobile Framework",
+    desktopFramework: "Desktop Framework",
+    backendFramework: "Backend Framework",
+    database: "Database",
+    language: "Language"
   },
 }

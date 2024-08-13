@@ -63,7 +63,15 @@ export interface ITranslation {
     emphasis: string,
     presentationContinuation: string,
     presentation2: string,
-    listItems: string[]
+    listItems: string[],
+    skills: string,
+    skillsNote: string,
+    webFramework: string,
+    mobileFramework: string,
+    desktopFramework: string,
+    backendFramework: string,
+    language: string,
+    database: string,
   }
 }
 

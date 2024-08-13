@@ -214,6 +214,15 @@ export const PT_BR: ITranslation = {
       "Formado em engenharia eletrônica, com ênfase em dispositivos embarcados, programação, automação e controle.",
       "Especialista em desenvolvimento de aplicativos web, desktop e mobile modernos, integrando conectividades wifi, bluetooth e iot...",
       "Desenvolvedor de aplicações para gerenciamento empresarial com integração de dashboard, indicadores, formulários e banco de dados"
-    ]
+    ],
+    skills: "Habilidades",
+    skillsNote: "Estas são algumas das tecnologias que mais utilizo atualmente mas estou sempre aprendendo novas tecnologias e ferramentas para melhorar minhas habilidades.",
+    webFramework: "Framework Web",
+    backendFramework: "Framework Backend",
+    mobileFramework: "Framework Mobile",
+    desktopFramework: "Framework Desktop",
+    database: "Banco de Dados",
+    language: "Linguagem",
+
   }
 }

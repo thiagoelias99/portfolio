@@ -4,7 +4,6 @@ import Header from './components/header/header'
 import NavBar from './components/nav/nav-bar'
 import { getTranslation, ITranslation, LangOptions } from './lib/lang/lang'
 import HomeSection from './sections/home'
-import SkillsSection from './sections/skills'
 import ProjectsSection from './sections/projects'
 import ServicesSection from './sections/services'
 import AboutSection from './sections/about'
@@ -43,11 +42,11 @@ function App() {
           className={headerPadding}
         />
 
-        <SkillsSection
+        {/* <SkillsSection
           translation={translation}
           setActiveSection={setActiveSection}
           className={headerPadding}
-        />
+        /> */}
 
         <ProjectsSection
           translation={translation}

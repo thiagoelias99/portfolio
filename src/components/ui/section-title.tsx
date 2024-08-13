@@ -1,10 +1,15 @@
-import { PropsWithChildren } from 'react';
+import { ReactNode } from 'react';
 
-export default function SectionTitle({ children }: PropsWithChildren) {
+interface Props {
+  children: ReactNode
+  noUnderline?: boolean
+}
+
+export default function SectionTitle({ children, noUnderline = false }: Props) {
   return (
     <div className=''>
       <h1 className='text-3xl md:text-5xl font-bold font-serif'>{children}</h1>
-      <div className='h-1 rounded-full bg-primary'></div>
+      {!noUnderline && <div className='h-1 rounded-full bg-primary'></div>}
     </div>
   )
 }
