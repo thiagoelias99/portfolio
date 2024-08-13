@@ -1,10 +1,10 @@
 import FullPageSection from '@/components/full-page-scroll/full-page-section'
 import { cn } from '@/lib/utils'
 import { ClassNameValue } from 'tailwind-merge'
-import coverPhoto from '../assets/cover_photo.jpg'
-import { ITranslation } from '@/lib/lang/lang'
-import IconsInfiniteScroll from './_components/icons-infinite-scroll'
-import { MailIcon } from 'lucide-react'
+import coverPhoto from '../assets/cover_photo.png'
+import { ITranslation, LangOptions } from '@/lib/lang/lang'
+import { FlipWords } from '@/components/ui/flip-words'
+import SectionScrollDown from '@/components/ui/section-scroll-down'
 
 interface ISectionHomeProps {
   setActiveSection: (section: string) => void
@@ -13,74 +13,30 @@ interface ISectionHomeProps {
 }
 
 export default function HomeSection({ translation, setActiveSection, className }: ISectionHomeProps) {
-  const [welcomePhrasePart1, welcomePhrasePart2] = translation.home.welcome.split(translation.name)
-
   return (
     <FullPageSection
       id='section_home'
+      disableScrollDownNotification
       setActiveSection={setActiveSection}
-      className={cn('text-foreground flex flex-col justify-start relative', className)}
+      className={cn('text-foreground flex flex-col justify-start relative max-w-screen-xl mx-auto', className)}
     >
-      <div className='w-full max-w-[1200px] mx-auto md:-translate-y-14 flex flex-col justify-center items-center md:pt-16 gap-4'>
-        <div className='w-full h-full flex flex-col md:flex-row justify-start md:justify-center items-center gap-2 md:gap-4'>
-          <div className='w-full max-w-[520px] flex flex-col justify-start md:justify-center items-start gap-1 md:gap-4'>
-            <h1 className='text-3xl md:text-6xl font-bold text-start'>{translation.home.title}</h1>
-            <strong className='text-xl md:text-2xl font-semibold text-primary'>{translation.home.phrase}</strong>
-            <p className='hidden md:block text-base md:text-lg'>{welcomePhrasePart1} <strong className='text-primary'>{translation.name}</strong>{welcomePhrasePart2}</p>
+      <section className="mt-8 w-full h-full bg-transparent">
+        <div className='relative w-full h-full flex flex-col'>
+          <h1 className='text-base md:text-xl md:mt-14 lg:text-2xl lg:mt-20'>{translation.home.hello}<strong className='text-primary text-3xl md:text-4xl lg:text-6xl font-serif font-semibold'>{translation.name}</strong></h1>
+          <div className={cn('mt-0 lg:mt-4 flex flex-row gap-1 lg:gap-4 text-start p-0 text-xl lg:text-4xl font-semibold items-start w-full', translation.lang === LangOptions.PT_BR ? "flex-row-reverse justify-end" : "")}>
+            <h3><FlipWords words={translation.home.words} /></h3>
+            <h2>{translation.home.title}</h2>
           </div>
-          <div className='bg-card md:bg-transparent p-3 rounded-md w-full max-w-[360px] flex md:flex-col md:gap-4 justify-around md:justify-start items-center gap-1 shadow-shape md:shadow-none'>
-            <div className='space-y-3'>
-              <p className='md:hidden text-base md:text-lg'>{welcomePhrasePart1} <strong className='text-primary'>{translation.name}</strong>{welcomePhrasePart2}</p>
-              <div className='md:hidden w-full flex justify-center items-start gap-4'>
-                <a target='blank' rel='noreferrer' href={translation.linkedIn} className='cursor-pointer'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-                    className='h-7 w-7'
-                  />
-                </a>
-                <a target='_blank' rel='noreferrer' href={translation.github} className='cursor-pointer'>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
-                    className='h-7 w-7 bg-white p-0.5 rounded'
-                  />
-                </a>
-                <a target='_blank' rel='noreferrer' href={`mailto:${translation.email}`} className='cursor-pointer'>
-                  <MailIcon className='h-7 w-7' />
-                </a>
-              </div>
-            </div>
-            <img
-              src={coverPhoto}
-              alt={translation.home.coverAlt}
-              className='float-right md:float-none h-44 w-44 md:h-72 md:w-72 object-cover rounded-full md:rounded-none'
-            />
-            <div className='hidden w-full md:flex justify-center items-start gap-4'>
-              <a target='blank' rel='noreferrer' href={translation.linkedIn} className='cursor-pointer'>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-                  className='h-10 w-10'
-                />
-              </a>
-              <a target='_blank' rel='noreferrer' href={translation.github} className='cursor-pointer'>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
-                  className='h-10 w-10 bg-white p-0.5 rounded'
-                />
-              </a>
-              <a target='_blank' rel='noreferrer' href={`mailto:${translation.email}`} className='cursor-pointer'>
-                <MailIcon className='h-10 w-10' />
-              </a>
-            </div>
-          </div>
+          <button className='w-56 mt-6 border-primary border-4 rounded px-6 py-2 text-primary text-base lg:text-lg font-semibold'>{translation.home.contact}</button>
+
+          <img
+            src={coverPhoto}
+            alt={translation.home.coverAlt}
+            className='absolute w-full top-0 right-0 object-cover md:rounded-none opacity-80 translate-x-10'
+          />
         </div>
-        <div className='w-full flex flex-row justify-between md:justify-start items-start gap-6 md:gap-16'>
-          <p className='w-full max-w-[280px] text-sm md:text-base'>{translation.home.firstSkill}</p>
-          <p className='w-full max-w-[280px] text-sm md:text-base'>{translation.home.secondSkill}</p>
-        </div>
-      </div>
-      <div className='hidden sm:flex space-x-20 overflow-hidden bg-white absolute left-0 bottom-0 right-0 py-2'>
-        <IconsInfiniteScroll />
-        <IconsInfiniteScroll hidden />
-        <IconsInfiniteScroll hidden />
-        <IconsInfiniteScroll hidden />
-        <IconsInfiniteScroll hidden />
-      </div>
+      </section>
+      <SectionScrollDown className="absolute bottom-0" />
     </FullPageSection>
   )
 }

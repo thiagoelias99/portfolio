@@ -5,6 +5,7 @@ export const EN: ITranslation = {
   linkedIn: "https://www.linkedin.com/in/eng-thiagoelias/",
   github: "https://github.com/thiagoelias99",
   email: "thiagoelias99@gmail.com",
+  lang: "en",
   nav_items: {
     home: 'Home',
     skills: 'Skills',
@@ -14,12 +15,15 @@ export const EN: ITranslation = {
     contact: 'Contact'
   },
   home: {
-    title: "Applications Developer.",
+    hello: "Hello I'm ",
+    title: "Developer",
+    words: ["Fullstack", "Mobile", "Desktop", "Embedded"],
     phrase: "Building solutions to impact the world.",
     welcome: "Hello, I am Thiago Elias, an electronic engineer and web, desktop, and mobile applications developer.",
-    firstSkill: "Specialist in hardware and software integration and development of applications for remote control and monitoring.",
-    secondSkill: "Fullstack developer of business management applications with integration of dashboard, indicators, forms, and databases, available locally or on the internet.",
-    coverAlt: "My profile picture: I am a man with brown skin, bald, and a light beard. I have a confident expression and am wearing a rust-colored social shirt."
+    firstSkill: "Specialist in hardware/software integration and development of applications for remote control and monitoring.",
+    secondSkill: "fullstack developer of business management applications with integration of dashboard, indicators, forms, and databases, available locally or on the internet.",
+    coverAlt: "My profile picture: I am a man with brown skin, bald, and a light beard. I have a confident expression and am wearing a rust-colored social shirt.",
+    contact: "Contact me"
   },
   skills: {
     title: "Skills",

@@ -11,7 +11,7 @@ import AboutSection from './sections/about'
 
 function App() {
   const [activeSection, setActiveSection] = useState('#section_home')
-  const [lang, setLang] = useState<LangOptions>(LangOptions.EN)
+  const [lang, setLang] = useState<LangOptions>(LangOptions.PT_BR)
   const [translation, setTranslation] = useState<ITranslation>(getTranslation(lang))
 
   const headerPadding = 'pt-32 md:pt-16'

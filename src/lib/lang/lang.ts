@@ -29,6 +29,7 @@ export interface ITranslation {
   linkedIn: string,
   github: string,
   email: string,
+  lang: string,
   nav_items: {
     home: string
     skills: string
@@ -38,12 +39,15 @@ export interface ITranslation {
     contact: string
   },
   home: {
+    hello: string,
     title: string,
+    words: string[],
     phrase: string,
     welcome: string,
     firstSkill: string,
     secondSkill: string,
     coverAlt: string
+    contact: string
   },
   skills: {
     title: string,

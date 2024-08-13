@@ -28,7 +28,7 @@ export default function NavBar({ activeSection, translation }: NavBarProps) {
           >
             <a
               href={item.href}
-              className={`text-base lg:text-xl ${activeSection === item.href ? 'text-primary font-semibold lg:font-bold' : 'text-foreground opacity-80'}`}
+              className={`text-base lg:text-xl ${activeSection === item.href ? 'text-foreground font-semibold lg:font-bold' : 'text-foreground opacity-50'}`}
             >
               {item.label}
             </a>
