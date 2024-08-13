@@ -159,6 +159,18 @@ export const PT_BR: ITranslation = {
         ]
       },
       {
+        name: "Logins",
+        description: "Projeto de estudo de autenticação de usuários utilizando Next Auth com autenticação por email e redes sociais.",
+        imageUrl: "/projects/cards/login_main.png",
+        stacks: [
+          { name: "Next.JS" },
+          { name: "TypeScript" },
+          { name: "Tailwind CSS" },
+          { name: "Next Auth" },
+          { name: "Oauth" },
+        ]
+      },
+      {
         name: "FSW Food",
         description: "Projeto proposto pela escola Full Stack Club, mas desenvolvido de acordo com minha escolha de tecnologias, onde o objetivo é criar a interface, autenticação e algumas regras de negócio de uma aplicação de delivery de comidas.",
         imageUrl: "/projects/cards/fsw_food_main.png",
@@ -166,7 +178,7 @@ export const PT_BR: ITranslation = {
           { name: "Next.JS" },
           { name: "TypeScript" },
           { name: "Tailwind CSS" },
-          { name: "Next Auth"},
+          { name: "Next Auth" },
           { name: "Firebase" },
           { name: "Prisma" },
           { name: "PostgreSQL" }

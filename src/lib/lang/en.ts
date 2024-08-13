@@ -158,6 +158,18 @@ export const EN: ITranslation = {
         ]
       },
       {
+        name: "Logins",
+        description: "User authentication study project using Next Auth with email and social media authentication.",
+        imageUrl: "/projects/cards/login_main.png",
+        stacks: [
+          { name: "Next.JS" },
+          { name: "TypeScript" },
+          { name: "Tailwind CSS" },
+          { name: "Next Auth" },
+          { name: "Oauth" },
+        ]
+      },
+      {
         name: "FSW Food",
         description: "Project proposed by the Full Stack Club school, but developed according to my choice of technologies, where the objective is to create the interface, authentication, and some business rules of a food delivery application.",
         imageUrl: "/projects/cards/fsw_food_main.png",
