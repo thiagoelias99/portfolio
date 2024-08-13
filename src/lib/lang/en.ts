@@ -203,5 +203,17 @@ export const EN: ITranslation = {
       }
     ]
     
-  }
+  },
+  about: {
+    title: "About me",
+    presentation: "Hello, I am Thiago Elias,",
+    emphasis: "electronic engineer and developer",
+    presentationContinuation: "of web, desktop and mobile applications.",
+    presentation2: "Specialist in hardware/software integration and development of applications for remote control and monitoring.",
+    listItems: [
+      "Graduated in electronic engineering, with emphasis on embedded devices, programming, automation, and control.",
+      "Specialist in the development of modern web, desktop, and mobile applications, integrating wifi, bluetooth, and iot connectivities.",
+      "Developer of applications for business management with integration of dashboard, indicators, forms, and databases."
+    ]
+  },
 }

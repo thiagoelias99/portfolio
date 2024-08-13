@@ -56,6 +56,14 @@ export interface ITranslation {
   projects: {
     title: string,
     projects: IProject[]
+  },
+  about: {
+    title: string,
+    presentation: string,
+    emphasis: string,
+    presentationContinuation: string,
+    presentation2: string,
+    listItems: string[]
   }
 }
 

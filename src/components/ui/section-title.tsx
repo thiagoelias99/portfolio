@@ -1,7 +1,10 @@
-import { ReactNode } from 'react';
+import { PropsWithChildren } from 'react';
 
-export default function SectionTitle({ children }: { children: ReactNode }) {
+export default function SectionTitle({ children }: PropsWithChildren) {
   return (
-    <h1 className='text-2xl sm:text-4xl font-bold'>{children}</h1>
+    <div className=''>
+      <h1 className='text-3xl md:text-5xl font-bold font-serif'>{children}</h1>
+      <div className='h-1 rounded-full bg-primary'></div>
+    </div>
   )
 }

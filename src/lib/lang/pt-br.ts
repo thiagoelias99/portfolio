@@ -8,10 +8,10 @@ export const PT_BR: ITranslation = {
   lang: "pt-br",
   nav_items: {
     home: 'Início',
+    about: 'Sobre',
     skills: 'Habilidades',
     projects: 'Projetos',
     services: 'Serviços',
-    about: 'Sobre',
     contact: 'Contato'
   },
   home: {
@@ -202,6 +202,18 @@ export const PT_BR: ITranslation = {
           { name: "Firestore" }
         ]
       }
+    ]
+  },
+  about: {
+    title: "Sobre mim",
+    presentation: "Olá, eu sou Thiago Elias,",
+    emphasis: "engenheiro eletrônico e desenvolvedor de aplicativos",
+    presentationContinuation: "web, desktop e mobile.",
+    presentation2: "Especialista em integração de hardware com software e desenvolvimento de aplicações para controle e monitoramento remoto.",
+    listItems: [
+      "Formado em engenharia eletrônica, com ênfase em dispositivos embarcados, programação, automação e controle.",
+      "Especialista em desenvolvimento de aplicativos web, desktop e mobile modernos, integrando conectividades wifi, bluetooth e iot...",
+      "Desenvolvedor de aplicações para gerenciamento empresarial com integração de dashboard, indicadores, formulários e banco de dados"
     ]
   }
 }
