@@ -21,6 +21,8 @@ export interface IProject {
   name: string,
   description: string,
   imageUrl: string,
+  deployUrl?: string,
+  repositoryUrl?: string,
   stacks: IStack[]
 }
 
@@ -63,6 +65,8 @@ export interface ITranslation {
   projects: {
     title: string,
     presentation: string,
+    repository: string,
+    deploy: string,
     projects: IProject[]
   },
   about: {

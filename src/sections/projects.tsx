@@ -24,7 +24,7 @@ export default function ProjectsSection({ translation, setActiveSection, classNa
 
       <div className='mt-8 md:mt-16 w-full flex flex-col justify-start items-start gap-8 md:gap-32'>
         {translation.projects.projects.map(project => (
-          <ProjectCard key={project.name} project={project} />
+          <ProjectCard key={project.name} project={project} translation={translation} />
         ))}
       </div>
     </FullPageSection>

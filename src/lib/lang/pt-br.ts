@@ -142,11 +142,14 @@ export const PT_BR: ITranslation = {
   projects: {
     title: "Projetos",
     presentation: "Alguns dos projetos que desenvolvi recentemente.",
+    deploy: "Visite",
+    repository: "Repositório",
     projects: [
       {
         name: "Planner",
         description: "Sistema proprietário desenvolvido para minha organização pessoal. Reúne funcionalidades de diversos aplicativos comumente utilizados para organização pessoal, financeira e profissional, porém integrados, possibilitando um controle e monitoramento automático em uma única tela.",
         imageUrl: "/projects/cards/planner_main.png",
+        repositoryUrl: "https://github.com/thiagoelias99/planner-nest2",
         stacks: [
           { name: "Nest.JS" },
           { name: "Next.JS" },
@@ -161,6 +164,8 @@ export const PT_BR: ITranslation = {
         name: "Imagem para Texto",
         description: "Projeto de inteligência artificial desenvolvido com o objetivo de gerar descrição textual de imagens (alt) para ajudar na acessibilidade de sites e aplicativos.",
         imageUrl: "/projects/cards/image_text_main.png",
+        repositoryUrl: "https://github.com/thiagoelias99/image-description",
+        deployUrl: "https://image-description-seven.vercel.app/",
         stacks: [
           { name: "Google AI Studio" },
           { name: "Gemini AI" },
@@ -174,6 +179,8 @@ export const PT_BR: ITranslation = {
         name: "Logins",
         description: "Projeto de estudo de autenticação de usuários utilizando Next Auth com autenticação por email e redes sociais.",
         imageUrl: "/projects/cards/login_main.png",
+        repositoryUrl: "https://github.com/thiagoelias99/login",
+        deployUrl: "https://login-azure-psi.vercel.app/",
         stacks: [
           { name: "Next.JS" },
           { name: "TypeScript" },
@@ -186,6 +193,8 @@ export const PT_BR: ITranslation = {
         name: "FSW Food",
         description: "Projeto proposto pela escola Full Stack Club, mas desenvolvido de acordo com minha escolha de tecnologias, onde o objetivo é criar a interface, autenticação e algumas regras de negócio de uma aplicação de delivery de comidas.",
         imageUrl: "/projects/cards/fsw_food_main.png",
+        repositoryUrl: "https://github.com/thiagoelias99/fsw-food",
+        deployUrl: "https://fsw-food-nine.vercel.app/",
         stacks: [
           { name: "Next.JS" },
           { name: "TypeScript" },
@@ -200,6 +209,8 @@ export const PT_BR: ITranslation = {
         name: "Trazler",
         description: "Projeto front-end desenvolvido para a pós-graduação de desenvolvimento fullstack utilizando a tecnologia Jamstack com Next e Gatsby, simulando um blog de destinos de viagem, com artigos escritos na liguagem .mdx.",
         imageUrl: "/projects/cards/trazler_main.png",
+        repositoryUrl: "https://github.com/thiagoelias99/infnet-projeto-jamstack-next",
+        deployUrl: "https://infnet-projeto-jamstack-next.vercel.app/",
         stacks: [
           { name: "Jamstack" },
           { name: "Next.JS" },
