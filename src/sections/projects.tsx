@@ -4,6 +4,7 @@ import { ITranslation } from '@/lib/lang/lang'
 import { cn } from '@/lib/utils'
 import { ClassNameValue } from 'tailwind-merge'
 import ProjectCard from './_components/project-card'
+import SectionP from '@/components/ui/section-p'
 
 interface ISectionHomeProps {
   setActiveSection: (section: string) => void
@@ -16,17 +17,15 @@ export default function ProjectsSection({ translation, setActiveSection, classNa
     <FullPageSection
       id='section_projects'
       setActiveSection={setActiveSection}
-      className={cn('px-4 text-foreground h-auto min-h-screen', className)}
+      className={cn('max-w-screen-xl mx-auto px-4 h-auto', className)}
     >
-      <div className='w-full lg:w-[80%] max-w-[1440px] mx-auto'>
-        <SectionTitle>{translation.projects.title}</SectionTitle>
+      <SectionTitle>{translation.projects.title}</SectionTitle>
+      <SectionP className='mt-4'>{translation.projects.presentation}</SectionP>
 
-        <div className='mt-4 w-full flex flex-row justify-center items-start gap-x-4 flex-wrap gap-y-6'>
-          {translation.projects.projects.map(project => (
-            <ProjectCard key={project.name} project={project} />
-          ))}
-        </div>
-
+      <div className='mt-8 md:mt-16 w-full flex flex-col justify-start items-start gap-8 md:gap-32'>
+        {translation.projects.projects.map(project => (
+          <ProjectCard key={project.name} project={project} />
+        ))}
       </div>
     </FullPageSection>
   )

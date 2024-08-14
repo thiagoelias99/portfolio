@@ -134,6 +134,7 @@ export const PT_BR: ITranslation = {
   },
   projects: {
     title: "Projetos",
+    presentation: "Alguns dos projetos que desenvolvi recentemente.",
     projects: [
       {
         name: "Planner",

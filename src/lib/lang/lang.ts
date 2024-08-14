@@ -55,6 +55,7 @@ export interface ITranslation {
   },
   projects: {
     title: string,
+    presentation: string,
     projects: IProject[]
   },
   about: {

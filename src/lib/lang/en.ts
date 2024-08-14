@@ -133,6 +133,7 @@ export const EN: ITranslation = {
   },
   projects: {
     title: "Projetos",
+    presentation: "These are some of the projects I have developed recently.",
     projects: [
       {
         name: "Planner",
