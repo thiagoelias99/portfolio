@@ -5,8 +5,8 @@ import NavBar from './components/nav/nav-bar'
 import { getTranslation, ITranslation, LangOptions } from './lib/lang/lang'
 import HomeSection from './sections/home'
 import ProjectsSection from './sections/projects'
-import ServicesSection from './sections/services'
 import AboutSection from './sections/about'
+import ContactsSection from './sections/contact'
 
 function App() {
   const [activeSection, setActiveSection] = useState('#section_home')
@@ -54,10 +54,16 @@ function App() {
           className={headerPadding}
         />
 
-        <ServicesSection
+        <ContactsSection
+          translation={translation}
           setActiveSection={setActiveSection}
           className={headerPadding}
         />
+
+        {/* <ServicesSection
+          setActiveSection={setActiveSection}
+          className={headerPadding}
+        /> */}
       </FullPageScroll>
     </div>
   )

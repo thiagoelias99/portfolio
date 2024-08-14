@@ -16,7 +16,8 @@ export default function NavBar({ activeSection, translation }: NavBarProps) {
     { href: '#section_about', label: translation.nav_items.about },
     // { href: '#section_skills', label: translation.nav_items.skills },
     { href: '#section_projects', label: translation.nav_items.projects },
-    { href: '#section_services', label: translation.nav_items.services },
+    { href: '#section_contacts', label: translation.nav_items.contact },
+    // { href: '#section_services', label: translation.nav_items.services },
   ]
 
   return (

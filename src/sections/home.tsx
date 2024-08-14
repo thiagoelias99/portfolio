@@ -33,8 +33,9 @@ export default function HomeSection({ translation, setActiveSection, className }
             draggable={false}
             className='md:absolute -translate-x-14 md:translate-x-16 md:-translate-y-12 w-full mt-2 top-0 right-0 object-cover md:rounded-none opacity-80'
           />
-          <button className='w-56 mt-8 md:mt-6 self-center md:self-auto border-primary border-4 rounded px-6 py-2 text-primary text-base lg:text-lg font-semibold'>{translation.home.contact}</button>
-
+          <a
+            href='#section_contacts'
+            className='w-56 mt-8 md:mt-6 self-center md:self-auto border-primary border-4 rounded px-6 py-2 text-primary text-base lg:text-lg font-semibold text-center cursor-pointer z-20'>{translation.home.contact}</a>
         </div>
       </section>
       <SectionScrollDown className="absolute bottom-0" />

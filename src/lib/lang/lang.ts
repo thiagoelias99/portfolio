@@ -29,6 +29,13 @@ export interface ITranslation {
   linkedIn: string,
   github: string,
   email: string,
+  instagram: string,
+  phone: string,
+  whatsapp: string,
+  address: string,
+  addressLink: string,
+  contactPhrase: string,
+  finalPhrase: string,
   lang: string,
   nav_items: {
     home: string

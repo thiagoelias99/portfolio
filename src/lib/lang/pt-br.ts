@@ -5,6 +5,13 @@ export const PT_BR: ITranslation = {
   linkedIn: "https://www.linkedin.com/in/eng-thiagoelias/",
   github: "https://github.com/thiagoelias99",
   email: "thiagoelias99@gmail.com",
+  instagram: "https://www.instagram.com/telias99/",
+  phone: "+55 12 99729-8442",
+  whatsapp: "https://wa.me/5512997298442",
+  address: "São José dos Campos, SP, Brasil",
+  addressLink: "https://www.google.com/maps/place/S%C3%A3o+Jos%C3%A9+dos+Campos,+SP/@-23.1895062,-45.8630127,37057m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94cc4bb3858cc2e7:0xba25a33168f8c1!8m2!3d-23.2198396!4d-45.8915658!16zL20vMDNiY3F6?entry=ttu",
+  contactPhrase: "Entre em contato",
+  finalPhrase: "Obrigado pela visita",
   lang: "pt-br",
   nav_items: {
     home: 'Início',
