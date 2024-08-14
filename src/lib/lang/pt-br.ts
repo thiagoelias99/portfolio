@@ -4,7 +4,7 @@ export const PT_BR: ITranslation = {
   name: "Thiago Elias",
   linkedIn: "https://www.linkedin.com/in/eng-thiagoelias/",
   github: "https://github.com/thiagoelias99",
-  email: "thiagoelias99@gmail.com",
+  email: "contato@thiagoeliaseng.com.br",
   instagram: "https://www.instagram.com/telias99/",
   phone: "+55 12 99729-8442",
   whatsapp: "https://wa.me/5512997298442",

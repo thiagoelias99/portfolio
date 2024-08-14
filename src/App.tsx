@@ -13,7 +13,7 @@ function App() {
   const [lang, setLang] = useState<LangOptions>(LangOptions.PT_BR)
   const [translation, setTranslation] = useState<ITranslation>(getTranslation(lang))
 
-  const headerPadding = 'pt-32 md:pt-16'
+  const headerPadding = 'pt-32 xl:pt-16'
 
   useEffect(() => {
     setTranslation(getTranslation(lang))

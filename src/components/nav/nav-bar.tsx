@@ -21,15 +21,15 @@ export default function NavBar({ activeSection, translation }: NavBarProps) {
   ]
 
   return (
-    <nav className='w-full lg:w-auto h-auto bg-background lg:bg-transparent fixed right-0 top-0 translate-y-16 lg:translate-y-20 pb-2 lg:pb-0 px-1 lg:px-8 z-30'>
-      <ul className='flex lg:flex-col justify-evenly lg:justify-center items-end gap-x-4 lg:gap-2 flex-wrap lg:flex-nowrap'>
+    <nav className='w-full xl:w-auto h-auto bg-background xl:bg-transparent fixed right-0 top-0 translate-y-16 xl:translate-y-20 pb-2 xl:pb-0 px-1 xl:px-8 z-30'>
+      <ul className='flex xl:flex-col justify-evenly xl:justify-center items-end gap-x-4 xl:gap-2 flex-wrap xl:flex-nowrap'>
         {anchor.map((item, index) => (
           <li key={index}
             className='transform hover:scale-110 transition-transform duration-300'
           >
             <a
               href={item.href}
-              className={`text-base lg:text-xl ${activeSection === item.href ? 'text-foreground font-semibold lg:font-bold' : 'text-foreground opacity-50'}`}
+              className={`text-base xl:text-xl ${activeSection === item.href ? 'text-foreground font-semibold xl:font-bold' : 'text-foreground opacity-50'}`}
             >
               {item.label}
             </a>
