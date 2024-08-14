@@ -243,5 +243,36 @@ export const PT_BR: ITranslation = {
     database: "Banco de Dados",
     language: "Linguagem",
 
+  },
+  services: {
+    title: "Meus Serviços",
+    description: "Conheça os serviços que ofereço para ajudar você a construir sua aplicação.",
+    services: [
+      {
+        name: "Desenvolvimento de Aplicativos para Pequenos Negócios",
+        description: "Um aplicativo personalizado, desenvolvido sob medida para atender às suas necessidades específicas. Especializado em criar soluções móveis para pequenas empresas, ofereço aplicativos intuitivos, funcionais e de fácil uso, que ajudam a melhorar a eficiência operacional, aumentar o engajamento dos clientes e impulsionar as vendas.",
+        description2: "Seja para gerenciar pedidos, oferecer um serviço exclusivo aos clientes ou facilitar a comunicação interna, estou aqui para transformar sua ideia em realidade. Todo o processo é feito em colaboração com você, desde o planejamento e design até o desenvolvimento e lançamento, garantindo que o aplicativo reflita a identidade do seu negócio e ofereça uma experiência de usuário excepcional."
+      },
+      {
+        name: "Criação, Suporte e Manutenção de Sites e Landing Pages",
+        description: "Destaque sua presença online com sites e landing pages profissionais, otimizadas e prontas para converter. Ofereço serviços completos que incluem desde a criação e design, até o suporte contínuo e a manutenção regular, garantindo que seu site esteja sempre atualizado e funcionando perfeitamente.",
+        description2: "Trabalho para desenvolver soluções que refletem a identidade da sua marca e atendem às suas metas de negócio, seja para apresentar seu portfólio, captar leads ou vender produtos. Além disso, proporciono suporte técnico para solucionar problemas rapidamente e manutenção preventiva para evitar falhas, assegurando uma experiência digital fluida e eficiente para seus usuários."
+      },
+      {
+        name: "Colaboração e Auxílio a Startups no Desenvolvimento de Protótipos de Sistemas, Aplicativos e Dispositivos",
+        description: "Impulsione a inovação da sua startup com meu suporte no desenvolvimento de protótipos. Ofereço colaboração direta e assistência técnica para transformar suas ideias em realidade, seja no desenvolvimento de sistemas, aplicativos ou dispositivos.",
+        description2: "Entendo os desafios e a agilidade que as startups exigem, por isso trabalho para criar protótipos funcionais e prontos para testes, permitindo que você valide conceitos rapidamente e atraia investidores com confiança. Desde o planejamento estratégico até a execução técnica, estou comprometido em entregar soluções criativas e eficazes que atendam às necessidades específicas do seu projeto, sempre alinhado aos objetivos do seu negócio."
+      },
+      {
+        name: "Análise de Requisitos e Viabilidade do Software",
+        description: "Garanta o sucesso do seu projeto de software com uma análise detalhada de requisitos e viabilidade. Posso ajudar você a definir claramente as necessidades do seu sistema, identificar possíveis desafios e avaliar a viabilidade técnica e econômica antes de iniciar o desenvolvimento.",
+        description2: "Trabalho em conjunto com sua equipe para entender as expectativas, funcionalidades desejadas e restrições do projeto, fornecendo um relatório completo que orienta as próximas etapas. Com essa análise, você terá uma visão clara e realista do escopo do projeto, prazos, custos e recursos necessários, assegurando que o desenvolvimento siga o caminho certo desde o início."
+      },
+      {
+        name: "Teste Ent-To-End de APIs",
+        description: "Assegure a qualidade e confiabilidade das suas APIs com um serviço completo de Teste End-To-End. Ofereço testes abrangentes que simulam cenários reais de uso, verificando a integração, performance e segurança de suas APIs do início ao fim.",
+        description2: "Meu processo envolve testar cada fluxo de dados e interações entre sistemas, garantindo que todas as funcionalidades da API funcionem conforme esperado em diversos ambientes. Com isso, você pode lançar seus produtos com a certeza de que suas APIs são robustas, eficientes e preparadas para atender às demandas dos usuários."
+      }
+    ]
   }
 }

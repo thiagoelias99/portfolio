@@ -11,7 +11,7 @@ export default function ProjectCard({ project, translation }: ProjectCardProps) 
     <div className='w-full md:max-w-[90%] mx-auto flex flex-col md:flex-row md:even:flex-row-reverse md:gap-8'>
       <div className='w-full md:max-w-[45%]'>
         <h2 className='text-2xl md:text-4xl font-semibold'>{project.name}</h2>
-        <div className='pt-2 flex justify-start items-start gap-4'>
+        <div className='pt-2 py-2 md:pb-0 flex justify-start items-start gap-4'>
           {project.deployUrl && (
             <a
               href={project.deployUrl}

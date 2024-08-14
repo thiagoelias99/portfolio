@@ -243,4 +243,36 @@ export const EN: ITranslation = {
     database: "Database",
     language: "Language"
   },
+  services: {
+    title: "My Services",
+    description: "Discover the services I offer to help you build your application.",
+    services: [
+      {
+        name: "App Development for Small Businesses",
+        description: "A custom app, developed to meet your specific needs. Specializing in creating mobile solutions for small businesses, I offer intuitive, functional, and user-friendly apps that help improve operational efficiency, increase customer engagement, and boost sales.",
+        description2: "Whether it's managing orders, offering a unique service to customers, or facilitating internal communication, I'm here to turn your idea into reality. The entire process is done in collaboration with you, from planning and design to development and launch, ensuring the app reflects your business's identity and provides an exceptional user experience."
+      },
+      {
+        name: "Creation, Support, and Maintenance of Websites and Landing Pages",
+        description: "Enhance your online presence with professional, optimized websites and landing pages ready to convert. I offer comprehensive services that include everything from creation and design to ongoing support and regular maintenance, ensuring your site is always up-to-date and functioning perfectly.",
+        description2: "I work to develop solutions that reflect your brand's identity and meet your business goals, whether it's showcasing your portfolio, capturing leads, or selling products. Additionally, I provide technical support to quickly resolve issues and preventive maintenance to avoid failures, ensuring a smooth and efficient digital experience for your users."
+      },
+      {
+        name: "Collaboration and Assistance to Startups in Developing Prototypes of Systems, Applications, and Devices",
+        description: "Drive your startup's innovation with my support in developing prototypes. I offer direct collaboration and technical assistance to turn your ideas into reality, whether in developing systems, applications, or devices.",
+        description2: "I understand the challenges and agility that startups require, so I work to create functional prototypes ready for testing, allowing you to validate concepts quickly and attract investors with confidence. From strategic planning to technical execution, I am committed to delivering creative and effective solutions that meet the specific needs of your project, always aligned with your business objectives."
+      },
+      {
+        name: "Software Requirements and Feasibility Analysis",
+        description: "Ensure the success of your software project with a detailed requirements and feasibility analysis. I can help you clearly define your system's needs, identify potential challenges, and assess technical and economic feasibility before starting development.",
+        description2: "I work closely with your team to understand the project's expectations, desired functionalities, and constraints, providing a comprehensive report that guides the next steps. With this analysis, you will have a clear and realistic view of the project's scope, timelines, costs, and necessary resources, ensuring that development stays on the right track from the start."
+      },
+      {
+        name: "End-to-End API Testing",
+        description: "Ensure the quality and reliability of your APIs with a comprehensive End-to-End Testing service. I offer thorough tests that simulate real-world usage scenarios, checking the integration, performance, and security of your APIs from start to finish.",
+        description2: "My process involves testing every data flow and system interaction, ensuring that all API functionalities work as expected in various environments. This way, you can launch your products with the confidence that your APIs are robust, efficient, and ready to meet user demands."
+      }
+    ]
+  }
+  
 }

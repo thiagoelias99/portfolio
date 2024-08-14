@@ -26,6 +26,12 @@ export interface IProject {
   stacks: IStack[]
 }
 
+export interface IService {
+  name: string,
+  description: string,
+  description2: string,
+}
+
 export interface ITranslation {
   name: string,
   linkedIn: string,
@@ -84,7 +90,12 @@ export interface ITranslation {
     backendFramework: string,
     language: string,
     database: string,
-  }
+  },
+  services: {
+    title: string,
+    description: string,
+    services: IService[]
+  },
 }
 
 export function getTranslation(lang: LangOptions) {

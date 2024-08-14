@@ -38,7 +38,7 @@ export default function HomeSection({ translation, setActiveSection, className }
             className='w-56 mt-8 md:mt-6 self-center md:self-auto border-primary border-4 rounded px-6 py-2 text-primary text-base lg:text-lg font-semibold text-center cursor-pointer z-20'>{translation.home.contact}</a>
         </div>
       </section>
-      <SectionScrollDown className="absolute bottom-0" />
+      <SectionScrollDown className="absolute bottom-0 left-0 right-0" />
     </FullPageSection>
   )
 }

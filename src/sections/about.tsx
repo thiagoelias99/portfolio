@@ -19,7 +19,7 @@ export default function AboutSection({ setActiveSection, className, translation 
 
   function SkillItem(props: { href: string, imgSrc: string, title: string, description: string }) {
     return (
-      <li className='bg-card w-full flex flex-col justify-center items-center p-6 rounded-xl cursor-pointer border-2 border-transparent hover:border-primary transition-all duration-300'>
+      <li className='bg-card w-full flex flex-col justify-center items-center py-6 px-1 sm:px-6 rounded-xl cursor-pointer border-2 border-transparent hover:border-primary transition-all duration-300'>
         <a
           href={props.href}
           target='_blank'
