@@ -247,6 +247,8 @@ export const PT_BR: ITranslation = {
   services: {
     title: "Meus Serviços",
     description: "Conheça os serviços que ofereço para ajudar você a construir sua aplicação.",
+    showMore: "Mostrar mais",
+    showLess: "Mostrar menos",
     services: [
       {
         name: "Desenvolvimento de Aplicativos para Pequenos Negócios",

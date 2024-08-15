@@ -94,6 +94,8 @@ export interface ITranslation {
   services: {
     title: string,
     description: string,
+    showMore: string,
+    showLess: string,
     services: IService[]
   },
 }

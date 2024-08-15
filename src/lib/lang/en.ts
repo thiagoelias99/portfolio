@@ -246,6 +246,8 @@ export const EN: ITranslation = {
   services: {
     title: "My Services",
     description: "Discover the services I offer to help you build your application.",
+    showMore: "Show more",
+    showLess: "Show less",
     services: [
       {
         name: "App Development for Small Businesses",

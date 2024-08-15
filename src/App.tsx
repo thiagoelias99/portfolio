@@ -7,6 +7,7 @@ import HomeSection from './sections/home'
 import ProjectsSection from './sections/projects'
 import AboutSection from './sections/about'
 import ContactsSection from './sections/contact'
+import ServicesSection from './sections/services'
 
 function App() {
   const [activeSection, setActiveSection] = useState('#section_home')
@@ -54,16 +55,18 @@ function App() {
           className={headerPadding}
         />
 
+        <ServicesSection
+          translation={translation}
+          setActiveSection={setActiveSection}
+          className={headerPadding}
+        />
+
         <ContactsSection
           translation={translation}
           setActiveSection={setActiveSection}
           className={headerPadding}
         />
 
-        {/* <ServicesSection
-          setActiveSection={setActiveSection}
-          className={headerPadding}
-        /> */}
       </FullPageScroll>
     </div>
   )
