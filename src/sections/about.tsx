@@ -127,7 +127,7 @@ export default function AboutSection({ setActiveSection, className, translation 
 
   return (
     <FullPageSection
-      id='section_about'
+      id={translation.nav_items.about.toLowerCase()}
       setActiveSection={setActiveSection}
       className={cn('max-w-screen-xl mx-auto px-4 h-auto', className)}
     >
@@ -144,7 +144,7 @@ export default function AboutSection({ setActiveSection, className, translation 
           ))}
         </ul>
       </div>
-      <section className='w-full py-20 flex flex-col justify-start items-center'>
+      <section className='w-full py-20 flex flex-col justify-start items-center pb-10 sm:pb-20'>
         <SectionTitle noUnderline>{translation.about.skills}</SectionTitle>
         <SectionP className="md:pt-4 max-w-prose">{translation.about.skillsNote}</SectionP>
         <ul className='w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 justify-center items-center gap-4 p-4'>

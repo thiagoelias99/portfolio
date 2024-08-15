@@ -12,12 +12,12 @@ interface IAppAnchor {
 
 export default function NavBar({ activeSection, translation }: NavBarProps) {
   const anchor: IAppAnchor[] = [
-    { href: '#section_home', label: translation.nav_items.home },
-    { href: '#section_about', label: translation.nav_items.about },
+    { href: `#${translation.nav_items.home.toLowerCase()}`, label: translation.nav_items.home },
+    { href: `#${translation.nav_items.about.toLowerCase()}`, label: translation.nav_items.about },
     // { href: '#section_skills', label: translation.nav_items.skills },
-    { href: '#section_projects', label: translation.nav_items.projects },
-    { href: '#section_services', label: translation.nav_items.services },
-    { href: '#section_contacts', label: translation.nav_items.contact },
+    { href: `#${translation.nav_items.projects.toLowerCase()}`, label: translation.nav_items.projects },
+    { href: `#${translation.nav_items.services.toLowerCase()}`, label: translation.nav_items.services },
+    { href: `#${translation.nav_items.contact.toLowerCase()}`, label: translation.nav_items.contact },
   ]
 
   return (

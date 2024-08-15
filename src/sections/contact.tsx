@@ -15,7 +15,7 @@ export default function ContactsSection({ setActiveSection, className, translati
   return (
     <FullPageSection
       disableScrollDownNotification
-      id='section_contacts'
+      id={translation.nav_items.contact.toLowerCase()}
       setActiveSection={setActiveSection}
       className={cn('max-w-screen-xl mx-auto', className)}
     >

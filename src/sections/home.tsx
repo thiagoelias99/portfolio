@@ -15,7 +15,7 @@ interface ISectionHomeProps {
 export default function HomeSection({ translation, setActiveSection, className }: ISectionHomeProps) {
   return (
     <FullPageSection
-      id='section_home'
+      id={translation.nav_items.home.toLowerCase()}
       disableScrollDownNotification
       setActiveSection={setActiveSection}
       className={cn('text-foreground flex flex-col justify-start relative max-w-screen-xl mx-auto', className)}

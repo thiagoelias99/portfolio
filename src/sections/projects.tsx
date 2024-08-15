@@ -15,14 +15,14 @@ interface ISectionHomeProps {
 export default function ProjectsSection({ translation, setActiveSection, className }: ISectionHomeProps) {
   return (
     <FullPageSection
-      id='section_projects'
+      id={translation.nav_items.projects.toLowerCase()}
       setActiveSection={setActiveSection}
       className={cn('max-w-screen-xl mx-auto px-4 h-auto', className)}
     >
       <SectionTitle>{translation.projects.title}</SectionTitle>
       <SectionP className='mt-4'>{translation.projects.presentation}</SectionP>
 
-      <div className='mt-8 md:mt-16 w-full flex flex-col justify-start items-start gap-8 md:gap-32'>
+      <div className='mt-8 md:mt-16 w-full flex flex-col justify-start items-start gap-8 md:gap-32 pb-10 sm:pb-20'>
         {translation.projects.projects.map(project => (
           <ProjectCard key={project.name} project={project} translation={translation} />
         ))}

@@ -14,7 +14,7 @@ interface ISectionHomeProps {
 export default function SkillsSection({ translation, setActiveSection, className }: ISectionHomeProps) {
   return (
     <FullPageSection
-      id='section_skills'
+      id={translation.nav_items.skills.toLowerCase()}
       setActiveSection={setActiveSection}
       className={cn('px-4 text-foreground h-auto', className)}
     >
