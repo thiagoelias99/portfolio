@@ -19,8 +19,8 @@ export function LangSelection({ lang, setLang }: LangSelectionProps) {
     value={lang} 
     onValueChange={setLang}
     >
-      <SelectTrigger className="w-[160px] bg-transparent border-0 outline-none flex justify-end gap-2">
-        <SelectValue className='w-full outline-none'
+      <SelectTrigger aria-label='Select a language' className="w-[160px] bg-transparent border-0 outline-none flex justify-end gap-2">
+        <SelectValue aria-label='Select a language' className='w-full outline-none'
           placeholder="Select a language" />
       </SelectTrigger>
       <SelectContent className=''>

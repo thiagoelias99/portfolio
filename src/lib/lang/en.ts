@@ -147,7 +147,7 @@ export const EN: ITranslation = {
       {
         name: "Planner",
         description: "Proprietary system developed for my personal organization. It combines functionalities of various commonly used apps for personal, financial, and professional organization, but integrated, allowing automatic control and monitoring on a single screen.",
-        imageUrl: "/projects/cards/planner_main.png",
+        imageUrl: "/projects/cards/planner_main.webp",
         repositoryUrl: "https://github.com/thiagoelias99/planner-nest2",
         stacks: [
           { name: "Nest.JS" },
@@ -162,7 +162,7 @@ export const EN: ITranslation = {
       {
         name: "Image to Text",
         description: "Artificial intelligence project developed to generate textual descriptions of images (alt) to aid in the accessibility of websites and applications.",
-        imageUrl: "/projects/cards/image_text_main.png",
+        imageUrl: "/projects/cards/image_text_main.webp",
         repositoryUrl: "https://github.com/thiagoelias99/image-description",
         deployUrl: "https://image-description-seven.vercel.app/",
         stacks: [
@@ -177,7 +177,7 @@ export const EN: ITranslation = {
       {
         name: "Logins",
         description: "User authentication study project using Next Auth with email and social media authentication.",
-        imageUrl: "/projects/cards/login_main.png",
+        imageUrl: "/projects/cards/login_main.webp",
         repositoryUrl: "https://github.com/thiagoelias99/login",
         deployUrl: "https://login-azure-psi.vercel.app/",
         stacks: [
@@ -191,7 +191,7 @@ export const EN: ITranslation = {
       {
         name: "FSW Food",
         description: "Project proposed by the Full Stack Club school, but developed according to my choice of technologies, where the objective is to create the interface, authentication, and some business rules of a food delivery application.",
-        imageUrl: "/projects/cards/fsw_food_main.png",
+        imageUrl: "/projects/cards/fsw_food_main.webp",
         repositoryUrl: "https://github.com/thiagoelias99/fsw-food",
         deployUrl: "https://fsw-food-nine.vercel.app/",
         stacks: [
@@ -207,7 +207,7 @@ export const EN: ITranslation = {
       {
         name: "Trazler",
         description: "Front-end project developed for the specialization course in fullstack development using Jamstack technology with Next and Gatsby, simulating a travel destination blog, with articles written in .mdx language.",
-        imageUrl: "/projects/cards/trazler_main.png",
+        imageUrl: "/projects/cards/trazler_main.webp",
         repositoryUrl: "https://github.com/thiagoelias99/infnet-projeto-jamstack-next",
         deployUrl: "https://infnet-projeto-jamstack-next.vercel.app/",
         stacks: [

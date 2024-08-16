@@ -57,6 +57,7 @@ export default function ContactsSection({ setActiveSection, className, translati
             <ul className='px-6 pt-6 flex justify-center items-center gap-8 -translate-y-3'>
               <li>
                 <a
+                  aria-label='LinkedIn'
                   target='_blank'
                   rel='noreferrer'
                   href={translation.linkedIn}
@@ -64,6 +65,7 @@ export default function ContactsSection({ setActiveSection, className, translati
               </li>
               <li>
                 <a
+                  aria-label='GitHub'
                   target='_blank'
                   rel='noreferrer'
                   href={translation.github}
@@ -71,6 +73,7 @@ export default function ContactsSection({ setActiveSection, className, translati
               </li>
               <li>
                 <a
+                  aria-label='Instagram'
                   target='_blank'
                   rel='noreferrer'
                   href={translation.instagram}

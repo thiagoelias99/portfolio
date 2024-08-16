@@ -1,7 +1,7 @@
 import FullPageSection from '@/components/full-page-scroll/full-page-section'
 import { cn } from '@/lib/utils'
 import { ClassNameValue } from 'tailwind-merge'
-import coverPhoto from '../assets/cover_photo.png'
+import coverPhoto from '../assets/cover_photo.webp'
 import { ITranslation, LangOptions } from '@/lib/lang/lang'
 import { FlipWords } from '@/components/ui/flip-words'
 import SectionScrollDown from '@/components/ui/section-scroll-down'

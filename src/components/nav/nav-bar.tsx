@@ -29,7 +29,7 @@ export default function NavBar({ activeSection, translation }: NavBarProps) {
           >
             <a
               href={item.href}
-              className={`text-base xl:text-xl ${activeSection === item.href ? 'text-foreground font-semibold xl:font-bold' : 'text-foreground opacity-50'}`}
+              className={`text-base xl:text-xl ${activeSection === item.href ? 'text-foreground font-semibold xl:font-bold' : 'text-foreground opacity-70'}`}
             >
               {item.label}
             </a>
