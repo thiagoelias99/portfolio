@@ -220,6 +220,20 @@ export const PT_BR: ITranslation = {
           { name: "Firebase" },
           { name: "Firestore" }
         ]
+      },
+      {
+        name: "NLW - Planner",
+        description: "Projeto que funciona como um planejador de viagens com opções de escolha de destino, data de ida e volta, e convidados. Possui login facilitado com magic link (somente email) e notificações por email. Desenvolvido utilizando Next.js como front-end e back-end; e Expo React Native como versão mobile",
+        imageUrl: "/projects/cards/rs_nlw_planner.webp",
+        repositoryUrl: "https://github.com/thiagoelias99/rs-nlw-planner",
+        deployUrl: "https://rs-nlw-planner.vercel.app/",
+        stacks: [
+          { name: "Next.Js" },
+          { name: "Expo React Native" },
+          { name: "Tailwind CSS" },
+          { name: "PostgreSQL" },
+          { name: "Typescript" }
+        ]
       }
     ]
   },
