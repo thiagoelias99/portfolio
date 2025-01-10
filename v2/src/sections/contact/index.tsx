@@ -1,11 +1,58 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'
 import Button from "../../components/button"
 import FormInputLabel from "../../components/form-input-label"
 import Section from "../../components/section"
 import TextAreaInputField from "../../components/text-area-input-field"
 import TextInputField from "../../components/text-input-field"
 import { SectionParagraph, SectionPrimaryTitle } from "../../components/typography"
+import { useState } from "react"
+import Modal from "../../components/modal"
+
+type FormData = {
+  name: string
+  email: string
+  message: string
+}
 
 export default function ContactSection() {
+  const [isModalOpen, setModalOpen] = useState(false)
+  const [modalMessage, setModalMessage] = useState("")
+  const [isSending, setIsSending] = useState(false)
+
+  async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setIsSending(true)
+    const formData: FormData = {
+      name: (event.target as any).name.value,
+      email: (event.target as any).email.value,
+      message: (event.target as any).message.value,
+    }
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formData,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        },
+      )
+      setModalMessage("Sua mensagem foi enviada com sucesso!")
+      setModalOpen(true)
+    } catch (err) {
+      if (err instanceof EmailJSResponseStatus) {
+        setModalMessage("Ocorreu um erro ao enviar sua mensagem. Tente novamente.")
+        setModalOpen(true)
+        return
+      }
+      setModalMessage("Ocorreu um erro inesperado. Por favor, tente novamente.")
+      setModalOpen(true)
+    } finally {
+      setIsSending(false)
+    }
+  }
+
   return (
     <Section
       id="contato"
@@ -20,7 +67,8 @@ export default function ContactSection() {
 
       <form
         id="contact-form"
-        className="w-full bg-popover text-popover-foreground p-6 flex flex-col gap-1"
+        className="w-full bg-popover text-popover-foreground p-6 flex flex-col gap-1 rounded"
+        onSubmit={sendEmail}
       >
         <FormInputLabel htmlFor="name">Nome</FormInputLabel>
         <TextInputField required id="name" placeholder="Digite seu nome" />
@@ -28,8 +76,14 @@ export default function ContactSection() {
         <TextInputField required id="email" type="email" placeholder="Digite seu email" />
         <FormInputLabel htmlFor="message" spacer>Mensagem</FormInputLabel>
         <TextAreaInputField required id="message" />
-        <Button type="submit">Enviar</Button>
+        <Button type="submit" isLoading={isSending}>Enviar</Button>
       </form>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setModalOpen(false)}
+        title="Mensagem"
+        message={modalMessage}
+      />
     </Section>
   )
 }
