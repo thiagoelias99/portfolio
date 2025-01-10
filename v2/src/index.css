@@ -8,9 +8,9 @@ body {
 
 @layer base {
   :root {
-    --background: 240 5.9% 90%; /* #e4e4e7 */
-    --foreground: 240 3.7% 15.9%; /* #27272a */
-    --hero: 240 4.9% 83.9%; /* #d4d4d8 */
+    --background: 0 0% 98%; /* #FAFAFA */
+    --foreground: 0 0% 40%; /* #666666 */
+    --hero: 0 0% 95%; /* #F2F2F2 */
     --hero-foreground: 0 0% 0%; /* #000000 */
     --card: 0 0% 98%%; /* #fafafa */
     --card-foreground: 240 3.7% 15.9%; /* #27272a */
@@ -20,7 +20,7 @@ body {
     --primary-foreground: 0 0% 100%; /* #ffffff */
     --secondary: 240 4.8% 95.9%; /* #D9D9E2 */
     --secondary-foreground: 240 5.9% 10%; /* #1A1A1A */
-    --muted: 240 4.8% 95.9%; /* #D9D9E2 */
+    --muted: 0 0% 91%; /* #E7E7E7 */
     --muted-foreground: 240 3.8% 46.1%; /* #8A8A8A */
     --accent: 240 4.8% 95.9%; /* #D9D9E2 */
     --accent-foreground: 240 5.9% 10%; /* #1A1A1A */

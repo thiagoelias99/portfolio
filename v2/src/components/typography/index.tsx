@@ -10,6 +10,15 @@ export function SectionPrimaryTitle({ children, className, ...rest }: ComponentP
   )
 }
 
+export function SectionSecondaryTitle({ children, className, ...rest }: ComponentProps<'h3'>) {
+  return (
+    <h3
+      className={cn("text-hero-foreground text-xl font-bold w-full text-start leading-relaxed", className)}
+      {...rest}
+    >{children}</h3>
+  )
+}
+
 export function SectionParagraph({ children, className, ...rest }: ComponentProps<'p'>) {
   return (
     <p
