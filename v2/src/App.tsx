@@ -1,7 +1,13 @@
+import Header from "./components/header"
+import AboutSection from "./sections/about"
+import HeroSection from "./sections/hero"
+
 function App() {
   return (
     <div className="">
-      <h1 className="">Hello World</h1>
+      <Header />
+      <HeroSection />
+      <AboutSection />
     </div>
   )
 }
