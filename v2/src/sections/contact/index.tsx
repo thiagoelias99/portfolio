@@ -19,8 +19,7 @@ export default function ContactSection() {
       </SectionParagraph>
 
       <form
-        action="send-email.php"
-        method="POST"
+        id="contact-form"
         className="w-full bg-popover text-popover-foreground p-6 flex flex-col gap-1"
       >
         <FormInputLabel htmlFor="name">Nome</FormInputLabel>
