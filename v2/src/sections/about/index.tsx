@@ -7,7 +7,7 @@ export default function AboutSection() {
   return (
     <Section
       id="sobre">
-      <SectionPrimaryTitle className="pb-2">Sobre mim</SectionPrimaryTitle>
+      <SectionPrimaryTitle>Sobre mim</SectionPrimaryTitle>
       <SectionParagraph>
         Profissional com 15 anos de experiência no mercado aeroespacial e defesa nas
         áreas de desenvolvimento de sistemas, engenharia de manufatura e engenharia eletrônica

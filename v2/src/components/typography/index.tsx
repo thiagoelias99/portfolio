@@ -4,7 +4,7 @@ import { cn } from "../../utils"
 export function SectionPrimaryTitle({ children, className, ...rest }: ComponentProps<'h2'>) {
   return (
     <h2
-      className={cn("text-hero-foreground text-3xl font-bold p-10 uppercase text-justify tracking-wider leading-relaxed", className)}
+      className={cn("text-hero-foreground text-3xl font-bold p-10 pb-2 uppercase text-justify tracking-wider leading-relaxed", className)}
       {...rest}
     >{children}</h2>
   )
