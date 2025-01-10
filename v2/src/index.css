@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Source Sans Pro", sans-serif, Arial, Helvetica;
+}
+
+@layer base {
+  :root {
+    --background: 240 5.9% 90%; /* #e4e4e7 */
+    --foreground: 240 3.7% 15.9%; /* #27272a */
+    --card: 0 0% 98%%; /* #fafafa */
+    --card-foreground: 240 3.7% 15.9%; /* #27272a */
+    --popover: 0 0% 98%%; /* #fafafa */
+    --popover-foreground: 240 3.7% 15.9%; /* #27272a */
+    --primary: 142.1 76.2% 36.3%; /* #63C550 */
+    --primary-foreground: 240 3.7% 15.9%; /* #27272a */
+    --secondary: 240 4.8% 95.9%; /* #D9D9E2 */
+    --secondary-foreground: 240 5.9% 10%; /* #1A1A1A */
+    --muted: 240 4.8% 95.9%; /* #D9D9E2 */
+    --muted-foreground: 240 3.8% 46.1%; /* #8A8A8A */
+    --accent: 240 4.8% 95.9%; /* #D9D9E2 */
+    --accent-foreground: 240 5.9% 10%; /* #1A1A1A */
+    --destructive: 3 59% 52%; /* #CC433B */
+    --destructive-foreground: 0 0% 98%; /* #F8F8F8 */
+    --success: 94 42% 48%; /* #73AD46 */
+    --success-foreground: 0 0% 98%; /* #F8F8F8 */
+    --border: 240 5.9% 90%; /* #A1A1B3 */
+    --input: 240 5.9% 90%; /* #A1A1B3 */
+    --ring: 142.1 76.2% 36.3%; /* #63C550 */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%; /* #2C2A29 */
+    --foreground: 0 0% 95%; /* #F2F2F2 */
+    --card: 24 9.8% 10%; /* #3F2A1D */
+    --card-foreground: 0 0% 95%; /* #F2F2F2 */
+    --popover: 0 0% 9%; /* #1A1A1A */
+    --popover-foreground: 0 0% 95%; /* #F2F2F2 */
+    --primary: 142.1 70.6% 45.3%; /* #4BB43D */
+    --primary-foreground: 144.9 80.4% 10%; /* #3F4C2C */
+    --secondary: 240 3.7% 15.9%; /* #262C38 */
+    --secondary-foreground: 0 0% 98%; /* #F8F8F8 */
+    --muted: 0 0% 15%; /* #262626 */
+    --muted-foreground: 240 5% 64.9%; /* #A5A5A5 */
+    --accent: 12 6.5% 15.1%; /* #4B3D2A */
+    --accent-foreground: 0 0% 98%; /* #F8F8F8 */
+    --destructive: 3 59% 52%; /* #CC433B */
+    --destructive-foreground: 0 85.7% 97.3%; /* #F7F7F7 */
+    --border: 240 3.7% 15.9%; /* #262C38 */
+    --input: 240 3.7% 15.9%; /* #262C38 */
+    --ring: 142.4 71.8% 29.2%; /* #6D9D35 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground tracking-wide sm:tracking-wider;
+  }
+}
