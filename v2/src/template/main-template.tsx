@@ -1,6 +1,7 @@
 import Header from "../components/header"
 import { Outlet } from "react-router"
 import ContactSection from "../sections/contact"
+import Footer from "../components/footer"
 
 export default function MainTemplate() {
   return (
@@ -10,6 +11,7 @@ export default function MainTemplate() {
         <Outlet />
         <ContactSection />
       </main>
+      <Footer />
     </div>
   )
 }
