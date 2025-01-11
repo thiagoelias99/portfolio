@@ -30,11 +30,11 @@ export default function Header() {
           }`}
       >
         <ul className="flex flex-col justify-end items-end gap-4 pr-4 w-full">
-          <LinkItem href="#hero" onClick={toggleMenu}>Início</LinkItem>
+          <LinkItem href="/#hero" onClick={toggleMenu}>Início</LinkItem>
           <Separator />
-          <LinkItem href="#sobre" onClick={toggleMenu}>Sobre Mim</LinkItem>
+          <LinkItem href="/#sobre" onClick={toggleMenu}>Sobre Mim</LinkItem>
           <Separator />
-          <LinkItem href="#projetos" onClick={toggleMenu}>Projetos</LinkItem>
+          <LinkItem href="/projetos" onClick={toggleMenu}>Projetos</LinkItem>
           <Separator />
           <LinkItem href="#contato" onClick={toggleMenu}>Contato</LinkItem>
         </ul>
