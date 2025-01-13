@@ -22,7 +22,7 @@ export default function RsNlwPlanner() {
   ]
 
   return (
-    <>
+    <div>
       <HeroSection
         title="RS NLW Planner"
         description="Aplicação com versões WEB e Mobile para gerenciamento de viagens, incluindo recursos de compartilhamento de roteiros e envio de links para convidados"
@@ -30,7 +30,7 @@ export default function RsNlwPlanner() {
         linkLabel="Acesse a aplicação"
       />
       <section>
-        <ImageSlider images={images} className="h-96" />
+        <ImageSlider images={images} className="h-96 sm:h-full" />
       </section>
       <Section>
         <SectionSecondaryTitle>Sobre o Projeto</SectionSecondaryTitle>
@@ -72,7 +72,9 @@ export default function RsNlwPlanner() {
           "PostgreSQL",
         ]}
       />
-      <LinkButton href="/projetos" className="mt-8 mx-4">Ver mais projetos</LinkButton>
-    </>
+      <Section>
+        <LinkButton href="/projetos" className="sm:self-center">Ver outros projetos</LinkButton>
+      </Section>
+    </div>
   )
 }

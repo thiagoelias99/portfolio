@@ -4,7 +4,7 @@ import { cn } from "../../utils"
 export function SectionPrimaryTitle({ children, className, ...rest }: ComponentProps<'h2'>) {
   return (
     <h2
-      className={cn("text-hero-foreground text-3xl font-bold p-10 pb-2 uppercase text-center tracking-wider leading-relaxed", className)}
+      className={cn("text-hero-foreground text-3xl sm:text-4xl font-bold p-10 pb-2 uppercase text-center tracking-wider leading-relaxed", className)}
       {...rest}
     >{children}</h2>
   )
@@ -13,7 +13,7 @@ export function SectionPrimaryTitle({ children, className, ...rest }: ComponentP
 export function SectionSecondaryTitle({ children, className, ...rest }: ComponentProps<'h3'>) {
   return (
     <h3
-      className={cn("text-hero-foreground text-xl font-bold w-full text-start leading-relaxed", className)}
+      className={cn("text-hero-foreground text-xl sm:text-2xl font-bold w-full text-start leading-relaxed", className)}
       {...rest}
     >{children}</h3>
   )
@@ -22,7 +22,7 @@ export function SectionSecondaryTitle({ children, className, ...rest }: Componen
 export function SectionParagraph({ children, className, ...rest }: ComponentProps<'p'>) {
   return (
     <p
-      className={cn("text-foreground max-w-prose justify-center w-full text-start tracking-wider leading-loose", className)}
+      className={cn("text-foreground max-w-prose justify-center w-full text-start tracking-wider leading-loose text-base sm:text-lg", className)}
       {...rest}
     >{children}</p>
   )

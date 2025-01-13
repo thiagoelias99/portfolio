@@ -76,7 +76,7 @@ export default function ContactSection() {
         <TextInputField required id="email" type="email" placeholder="Digite seu email" />
         <FormInputLabel htmlFor="message" spacer>Mensagem</FormInputLabel>
         <TextAreaInputField required id="message" />
-        <Button type="submit" isLoading={isSending}>Enviar</Button>
+        <Button type="submit" isLoading={isSending} className="self-center">Enviar</Button>
       </form>
       <Modal
         isOpen={isModalOpen}

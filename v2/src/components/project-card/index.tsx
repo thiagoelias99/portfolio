@@ -20,9 +20,9 @@ export default function ProjectCard(props: ProjectCardProps) {
         src={props.img}
         alt="project"
       />
-      <div className="p-4 -translate-y-10">
+      <div className="w-full py-4 -translate-y-20 flex flex-col justify-center items-center sm:gap-4">
         <SectionSecondaryTitle className="text-center">{props.title}</SectionSecondaryTitle>
-        <SectionParagraph className="text-sm text-center font-light tracking-widest">{props.description}</SectionParagraph>
+        <SectionParagraph className="text-sm text-center font-light tracking-widest w-full">{props.description}</SectionParagraph>
         <ul className="w-full flex justify-start flex-wrap gap-4 mt-2">
           {props.skills?.map((skill, index) => (
             <SkillItem key={index}>{skill}</SkillItem>

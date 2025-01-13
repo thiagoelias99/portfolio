@@ -7,6 +7,13 @@ import Separator from "../separator"
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const links = [
+    { href: "/#hero", text: "Início" },
+    { href: "/#sobre", text: "Sobre Mim" },
+    { href: "/projetos", text: "Projetos" },
+    { href: "#contato", text: "Contato" },
+  ]
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
@@ -16,10 +23,10 @@ export default function Header() {
       <h1 className="uppercase font-bold">Thiago Elias</h1>
       <button
         onClick={toggleMenu}
-        className="w-6 h-6">
+        className="w-6 h-6 sm:hidden">
         {
           menuOpen ? (
-            <img src={xIcon} alt="abrir menu" />
+            <img src={xIcon} alt="fechar menu" />
           ) : (
             <img src={menuIcon} alt="abrir menu" />
           )
@@ -30,13 +37,17 @@ export default function Header() {
           }`}
       >
         <ul className="flex flex-col justify-end items-end gap-4 pr-4 w-full">
-          <LinkItem href="/#hero" onClick={toggleMenu}>Início</LinkItem>
+          {links.map((link, index) => (
+            <LinkItem key={index} href={link.href}>{link.text}</LinkItem>
+          ))}
           <Separator />
-          <LinkItem href="/#sobre" onClick={toggleMenu}>Sobre Mim</LinkItem>
-          <Separator />
-          <LinkItem href="/projetos" onClick={toggleMenu}>Projetos</LinkItem>
-          <Separator />
-          <LinkItem href="#contato" onClick={toggleMenu}>Contato</LinkItem>
+        </ul>
+      </nav>
+      <nav className="hidden sm:block">
+        <ul className="flex gap-6">
+          {links.map((link, index) => (
+            <LinkItem key={index} href={link.href}>{link.text}</LinkItem>
+          ))}
         </ul>
       </nav>
     </header>

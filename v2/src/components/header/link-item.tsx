@@ -13,7 +13,7 @@ export default function LinkItem({ href, children, className, ...rest }: LinkIte
     >
       <a
         href={href}
-        className="text-foreground hover:underline hover:text-primary w-full text-end text-lg leading-relaxed">
+        className="text-foreground hover:underline hover:text-primary w-full text-end text-lg sm:text-xs sm:font-semibold sm:uppercase leading-relaxed">
         {children}
       </a>
     </li>

@@ -14,12 +14,17 @@ interface HeroSectionProps extends ComponentProps<'section'> {
 export default function HeroSection({ title, description, link, linkLabel, className, ...rest }: HeroSectionProps) {
   return (
     <Section
-      className={cn("min-h-[580px] bg-hero justify-center gap-6", className)}
+      className={cn("min-h-[580px] sm:min-h-[720px] bg-hero justify-center gap-6", className)}
       {...rest}
     >
-      <SectionPrimaryTitle className="text-4xl">{title}</SectionPrimaryTitle>
+      <SectionPrimaryTitle className="text-4xl sm:text-5xl sm:font-extrabold sm:leading-loose sm:text-pretty">{title}</SectionPrimaryTitle>
       <SectionParagraph className="text-center">{description}</SectionParagraph>
-      {link && linkLabel && <LinkButton href={link}>{linkLabel}</LinkButton>}
+      {link && linkLabel &&
+        <LinkButton
+          href={link}
+        >
+          {linkLabel}
+        </LinkButton>}
     </Section>
   )
 }

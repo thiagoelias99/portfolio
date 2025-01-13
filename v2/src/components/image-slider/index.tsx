@@ -15,7 +15,7 @@ export default function ImageSlider({ images, className, ...rest }: ImageSliderP
       spaceBetween={30}
       centeredSlides={true}
       autoplay={{
-        delay: 3000,
+        delay: 4500,
         disableOnInteraction: false,
       }}
       pagination={{

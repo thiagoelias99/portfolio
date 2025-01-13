@@ -14,7 +14,21 @@ export default function ProjectsSection() {
       <SectionParagraph
         className="text-center"
       >Confira uma seleção de projetos desenvolvidos para uso pessoal e estudos de caso.</SectionParagraph>
-      <ul className="w-full flex flex-col justify-start flex-wrap gap-4">
+      <ul className="w-full flex flex-col justify-start flex-wrap gap-4 sm:gap-0">
+        <ProjectCard
+          img={RsNlwPlannerCoverImage}
+          title="RS NLW Planner"
+          description="Aplicação com versões WEB e Mobile para gerenciamento de viagens, incluindo recursos de compartilhamento de roteiros e envio de links para convidados"
+          skills={["Next.Js", "React Native", "TypeScript"]}
+          link="/projetos/rs-nlw-planner"
+        />
+        <ProjectCard
+          img={RsNlwPlannerCoverImage}
+          title="RS NLW Planner"
+          description="Aplicação com versões WEB e Mobile para gerenciamento de viagens, incluindo recursos de compartilhamento de roteiros e envio de links para convidados"
+          skills={["Next.Js", "React Native", "TypeScript"]}
+          link="/projetos/rs-nlw-planner"
+        />
         <ProjectCard
           img={RsNlwPlannerCoverImage}
           title="RS NLW Planner"
