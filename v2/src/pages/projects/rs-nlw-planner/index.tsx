@@ -22,18 +22,18 @@ export default function RsNlwPlanner() {
   ]
 
   return (
-    <div>
+    <div className="w-full">
       <HeroSection
         title="RS NLW Planner"
         description="Aplicação com versões WEB e Mobile para gerenciamento de viagens, incluindo recursos de compartilhamento de roteiros e envio de links para convidados"
         link="https://rs-nlw-planner.vercel.app/"
         linkLabel="Acesse a aplicação"
       />
-      <section>
-        <ImageSlider images={images} className="h-96 sm:h-full" />
+      <section className="container mx-auto">
+        <ImageSlider images={images} className="h-96 sm:h-full lg:max-w-[720px]" />
       </section>
-      <Section>
-        <SectionSecondaryTitle>Sobre o Projeto</SectionSecondaryTitle>
+      <Section className="container mx-auto lg:space-y-6">
+        <SectionSecondaryTitle className="lg:text-center">Sobre o Projeto</SectionSecondaryTitle>
         <SectionParagraph>
           Aplicação proposta durante o evento da <ExternalLink href="https://www.rocketseat.com.br/">Rocketseat</ExternalLink>, cujo objetivo foi a construção de um sistema para controle e gerenciamento de viagens, composto por back-end, front-end web e versão mobile.
         </SectionParagraph>
@@ -41,7 +41,7 @@ export default function RsNlwPlanner() {
           A aplicação possui recursos como formulário <i>multi-step</i>, validação de campos digitados, restrição de datas, envio de e-mails, gerenciamento de convites, compartilhamento de links e edição e acompanhamento colaborativos do roteiro.
         </SectionParagraph>
 
-        <SectionSecondaryTitle>Versão Web em Next.js</SectionSecondaryTitle>
+        <SectionSecondaryTitle className="lg:text-center">Versão Web em Next.js</SectionSecondaryTitle>
         <SectionParagraph>
           Para a implementação da versão web, decidi utilizar o <ExternalLink href="https://nextjs.org/">Next.js</ExternalLink> como uma aplicação stand-alone, integrando também a função do back-end e conexão à banco de dados PostgreSQL.
         </SectionParagraph>
@@ -50,7 +50,7 @@ export default function RsNlwPlanner() {
         </SectionParagraph>
         <LinkButton href="https://rs-nlw-planner.vercel.app/" target="_blank">Acesse a aplicação</LinkButton>
 
-        <SectionSecondaryTitle>Versão Mobile em Expo React Native</SectionSecondaryTitle>
+        <SectionSecondaryTitle className="lg:text-center">Versão Mobile em Expo React Native</SectionSecondaryTitle>
         <SectionParagraph>
           Para a versão mobile híbrida, destinada a dispositivos Android e iOS, optei por utilizar a API disponibilizada para o projeto. Além disso, otimizei a interface para oferecer uma experiência de usuário (UX) moderna e agradável, com foco em telas touch.
         </SectionParagraph>

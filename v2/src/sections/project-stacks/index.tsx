@@ -2,6 +2,7 @@ import { ComponentProps } from "react"
 import Section from "../../components/section"
 import { SectionSecondaryTitle } from "../../components/typography"
 import SkillItem from "../../components/skill-item"
+import { cn } from "../../utils"
 
 interface ProjectStackSectionProps extends ComponentProps<"section"> {
   title?: string
@@ -11,7 +12,7 @@ interface ProjectStackSectionProps extends ComponentProps<"section"> {
 export default function ProjectStackSection({ title = "Tecnologias Utilizadas", stacks, className, ...rest }: ProjectStackSectionProps) {
   return (
     <Section
-      className={className}
+      className={cn("container mx-auto", className)}
       {...rest}
     >
       <SectionSecondaryTitle>{title}</SectionSecondaryTitle>

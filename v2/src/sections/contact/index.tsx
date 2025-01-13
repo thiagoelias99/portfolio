@@ -67,7 +67,7 @@ export default function ContactSection() {
 
       <form
         id="contact-form"
-        className="w-full bg-popover text-popover-foreground p-6 flex flex-col gap-1 rounded"
+        className="w-full max-w-screen-md bg-popover text-popover-foreground p-6 flex flex-col gap-1 rounded"
         onSubmit={sendEmail}
       >
         <FormInputLabel htmlFor="name">Nome</FormInputLabel>
