@@ -28,7 +28,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             <SkillItem key={index}>{skill}</SkillItem>
           ))}
         </ul>
-        <LinkButton href={props.link}>Acessar</LinkButton>
+        <LinkButton href={props.link}>Ver mais sobre</LinkButton>
       </div>
     </li>
   )

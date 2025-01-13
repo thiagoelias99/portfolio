@@ -21,7 +21,7 @@ export default function Footer() {
       </div>
       <Separator className="bg-muted-foreground my-8" />
       <div className="w-full flex flex-row justify-center items-center">
-        <span className="w-full text-[10px] text-center">© Todos os Direitos Reservados {new Date().getFullYear()} - Criado por <a className="underline font-semibold" href="www.thiagoeliaseng.com.br">Thiago Elias</a> - Inspirado por <a className="underline font-semibold" href="https://www.rammaheshwari.com/" target="_blank" rel="noreferrer">Ram Maheshwari</a></span>
+        <span className="w-full text-[10px] text-center">© Todos os Direitos Reservados {new Date().getFullYear()} - Criado por <a className="underline font-semibold" href="www.thiagoeliaseng.com.br">Thiago Elias</a></span>
       </div>
     </footer>
   )

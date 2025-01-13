@@ -18,8 +18,9 @@ export default function ProjectsSection() {
         <ProjectCard
           img={RsNlwPlannerCoverImage}
           title="RS NLW Planner"
-          description="Aplicação com versões WEB e Mobile para gerenciamento de viagens, incluindo recursos de compartilhamento de roteiros e envio de links para convidados."
+          description="Aplicação com versões WEB e Mobile para gerenciamento de viagens, incluindo recursos de compartilhamento de roteiros e envio de links para convidados"
           skills={["Next.Js", "React Native", "TypeScript"]}
+          link="/projetos/rs-nlw-planner"
         />
       </ul>
     </Section>
