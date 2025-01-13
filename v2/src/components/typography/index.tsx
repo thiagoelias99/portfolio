@@ -22,7 +22,7 @@ export function SectionSecondaryTitle({ children, className, ...rest }: Componen
 export function SectionParagraph({ children, className, ...rest }: ComponentProps<'p'>) {
   return (
     <p
-      className={cn("text-foreground max-w-prose justify-center w-full text-start tracking-wider leading-relaxed", className)}
+      className={cn("text-foreground max-w-prose justify-center w-full text-start tracking-wider leading-loose", className)}
       {...rest}
     >{children}</p>
   )

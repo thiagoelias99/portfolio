@@ -1,7 +1,7 @@
 import LinkButton from "../../components/link"
 import Section from "../../components/section"
+import SkillItem from "../../components/skill-item"
 import { SectionParagraph, SectionPrimaryTitle, SectionSecondaryTitle } from "../../components/typography"
-import Skill from "./skill"
 
 export default function AboutSection() {
   return (
@@ -27,18 +27,18 @@ export default function AboutSection() {
         className="pt-8"
       >Minhas Principais Habilidades</SectionSecondaryTitle>
       <ul className="w-full flex justify-start flex-wrap gap-4">
-        <Skill>Front End</Skill>
-        <Skill>Back End</Skill>
-        <Skill>React</Skill>
-        <Skill>Next.js</Skill>
-        <Skill>Expo React Native</Skill>
-        <Skill>Node.js</Skill>
-        <Skill>Nest.js</Skill>
-        <Skill>Typescript</Skill>
-        <Skill>Laravel</Skill>
-        <Skill>PHP</Skill>
-        <Skill>HTML</Skill>
-        <Skill>Design Responsivo</Skill>
+        <SkillItem>Front End</SkillItem>
+        <SkillItem>Back End</SkillItem>
+        <SkillItem>React</SkillItem>
+        <SkillItem>Next.js</SkillItem>
+        <SkillItem>Expo React Native</SkillItem>
+        <SkillItem>Node.js</SkillItem>
+        <SkillItem>Nest.js</SkillItem>
+        <SkillItem>Typescript</SkillItem>
+        <SkillItem>Laravel</SkillItem>
+        <SkillItem>PHP</SkillItem>
+        <SkillItem>HTML</SkillItem>
+        <SkillItem>Design Responsivo</SkillItem>
       </ul>
     </Section>
   )
