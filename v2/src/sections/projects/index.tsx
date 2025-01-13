@@ -1,6 +1,8 @@
 import ProjectCard from "../../components/project-card"
 import Section from "../../components/section"
-import { SectionParagraph, SectionPrimaryTitle } from "../../components/typography"
+// import { SectionParagraph, SectionPrimaryTitle } from "../../components/typography"
+import { SectionParagraph, SectionPrimaryTitle } from "@/components/typography"
+
 
 import RsNlwPlannerCoverImage from "../../assets/projetos/rs-nlw-planner/rs-nlw-planner_cover.webp"
 
