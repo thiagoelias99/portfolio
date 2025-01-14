@@ -1,10 +1,11 @@
 import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react'
 import { Pagination, Autoplay } from 'swiper/modules'
 import { cn } from "../../utils"
+import { staticImagePath } from "@/data"
 
 interface ImageSliderProps extends SwiperProps {
   images?: {
-    image: string
+    src: string
     alt: string
   }[]
 }
@@ -30,7 +31,7 @@ export default function ImageSlider({ images, className, ...rest }: ImageSliderP
           key={index}
         >
           <img
-            src={image.image}
+            src={staticImagePath + image.src}
             alt={image.alt}
             className="object-cover w-full h-full"
           />

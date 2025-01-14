@@ -1,6 +1,4 @@
-import AboutSection from "../../sections/about"
-import HeroSection from "../../sections/hero"
-import ProjectsSection from "../../sections/projects"
+import { AboutSection, HeroSection, ProjectsSection } from "@/sections"
 
 export default function MainPage() {
   return (
