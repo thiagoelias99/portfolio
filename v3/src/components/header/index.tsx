@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react"
 import menuIcon from "../../../public/icons/menu.svg"
 import xIcon from "../../../public/icons/x.svg"

@@ -5,16 +5,13 @@ import { ComponentProps } from "react"
 import SkillItem from "../skill-item"
 import { SectionParagraph, SectionSecondaryTitle } from "../typography"
 import { staticImagePath } from "@/data"
-import Image2 from "../../../public/images/rs-nlw-planner_cover.webp"
-import Image from "next/image"
+import LinkButton from "../link"
 
 interface ProjectCardProps extends ComponentProps<'li'> {
   project: Project
 }
 
 export default function ProjectCard({ project, ...rest }: ProjectCardProps) {
-
-  console.log(Image2)
 
   return (
     <li
@@ -34,7 +31,7 @@ export default function ProjectCard({ project, ...rest }: ProjectCardProps) {
             <SkillItem key={index}>{skill}</SkillItem>
           ))}
         </ul>
-        {/* <LinkButton to={`/projetos/${project.slug}`}>Ver mais sobre</LinkButton> */}
+        <LinkButton href={`/projetos/${project.slug}`}>Ver mais sobre</LinkButton>
       </div>
     </li>
   )

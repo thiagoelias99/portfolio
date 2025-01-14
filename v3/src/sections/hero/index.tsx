@@ -11,6 +11,8 @@ interface HeroSectionProps extends ComponentProps<'section'> {
 }
 
 export default function HeroSection({ title, description, link, linkLabel, className, ...rest }: HeroSectionProps) {
+  console.log('HeroSection', title, description, link, linkLabel, className, rest)
+
   return (
     <Section
       className={cn("min-h-[580px] sm:min-h-[720px] lg:min-h-[460px] bg-hero justify-center gap-6", className)}
