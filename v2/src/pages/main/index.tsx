@@ -8,7 +8,7 @@ export default function MainPage() {
         title="Olá, eu sou o Thiago Elias"
         description="Sou desenvolvedor especializado em aplicações web, mobile e desktop, com mais de 15 anos de experiência no desenvolvimento de software"
         linkLabel="Conheça meu trabalho"
-        link="#projetos"
+        link="/projetos"
       />
       <AboutSection />
       <ProjectsSection />

@@ -4,6 +4,7 @@ import AppRouter from "./router.tsx"
 
 import './swiper.min.css'
 import './pagination.min.css'
+import './navigation.min.css'
 import './index.css'
 
 createRoot(document.getElementById('root')!).render(

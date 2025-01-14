@@ -9,6 +9,7 @@ export default function LinkButton({ children, className, ...rest }: LinkProps) 
         "active:opacity-60 active:shadow-none",
         className
       )}
+      preventScrollReset={false}
       {...rest}
     >
       {children}

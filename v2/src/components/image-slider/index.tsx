@@ -1,7 +1,8 @@
 import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react'
-import { Pagination, Autoplay } from 'swiper/modules'
+import { Pagination, Autoplay, Navigation } from 'swiper/modules'
 import { cn } from "../../utils"
 import { staticImagePath } from "@/data"
+import { useMediaQuery } from "@reactuses/core"
 
 interface ImageSliderProps extends SwiperProps {
   images?: {
@@ -11,6 +12,9 @@ interface ImageSliderProps extends SwiperProps {
 }
 
 export default function ImageSlider({ images, className, ...rest }: ImageSliderProps) {
+
+  const isGreaterThanMd = useMediaQuery('(min-width: 768px)')
+
   return (
     <Swiper
       spaceBetween={30}
@@ -22,7 +26,10 @@ export default function ImageSlider({ images, className, ...rest }: ImageSliderP
       pagination={{
         clickable: true,
       }}
-      modules={[Autoplay, Pagination]}
+      navigation={{
+        enabled: isGreaterThanMd,
+      }}
+      modules={[Autoplay, Pagination, Navigation]}
       className={cn("mySwiper", className)}
       {...rest}
     >

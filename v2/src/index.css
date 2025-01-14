@@ -36,6 +36,9 @@ body {
     --input: 240 5.9% 90%; /* #A1A1B3 */
     --ring: 142.1 76.2% 36.3%; /* #63C550 */
     --radius: 0.5rem;
+
+    --swiper-navigation-color: #63c550;
+    --swiper-navigation-sides-offset: 0px;
   }
 
   .dark {
@@ -63,6 +66,10 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #63c550;
+}
+
+.swiper-navigation-color {
+  color: #63c550;
 }
 
 @layer base {
