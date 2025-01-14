@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "slug": "rs-nlw-planner",
+    "name": "RS NLW Planner",
+    "shortDescription": "Aplicação com versões WEB e Mobile para gerenciamento de viagens, incluindo recursos de compartilhamento de roteiros e envio de links para convidados",
+    "mainStacks": [
+      "Next.js",
+      "React Native",
+      "Typescript"
+    ],
+    "allStacks": [
+      "Next.js",
+      "Expo React Native",
+      "Typescript",
+      "Zod",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "React Query",
+      "React Hook Form",
+      "Prisma ORM",
+      "PostgreSQL"
+    ],
+    "githubUrl": "https://github.com/thiagoelias99/rs-nlw-planner",
+    "demoUrl": "https://rs-nlw-planner.vercel.app/",
+    "images": [
+      {
+        "src": "rs-nlw-planner_cover.webp",
+        "alt": "Tela de gerenciamento da aplicação RS NLW Planner"
+      },
+      {
+        "src": "rs-nlw-planner_img2.webp",
+        "alt": "Tela inicial da aplicação RS NLW Planner"
+      },
+      {
+        "src": "rs-nlw-planner_img3.webp",
+        "alt": "Exemplos de telas da aplicação RS NLW Planner"
+      },
+      {
+        "src": "rs-nlw-planner_img4.png",
+        "alt": "Exemplos de telas da aplicação RS NLW Planner"
+      },
+      {
+        "src": "rs-nlw-planner_img5.png",
+        "alt": "Exemplos de telas da aplicação RS NLW Planner"
+      }
+    ],
+    "_html": "<h2>Sobre o Projeto</h2>\n<p>\nAplicação proposta durante o evento da <a target=\"_blank\" href=\"https://www.rocketseat.com.br/\">Rocketseat</a>, cujo objetivo foi a construção de um sistema para controle e gerenciamento de viagens, composto por back-end, front-end web e versão mobile.\n</p>\n<p>\nA aplicação possui recursos como formulário <i>multi-step</i>, validação de campos digitados, restrição de datas, envio de e-mails, gerenciamento de convites, compartilhamento de links e edição e acompanhamento colaborativos do roteiro.\n</p>\n\n<h2 class=\"lg:text-center\">Versão Web em Next.js</h2>\n<p>\nPara a implementação da versão web, decidi utilizar o <a target=\"_blank\" href=\"https://nextjs.org/\">Next.js</a> como uma aplicação stand-alone, integrando também a função do back-end e conexão à banco de dados PostgreSQL.\n</p>\n<p>\nComo aprofundamento de conhecimento, resolvi incluir a função de login utilizando <i>magic link</i>, onde apenas o e-mail é necessário e um código de acesso é enviado para o e-mail do solicitante. Esse sistema também é utilizado para validação do usuário.\n</p>\n<button><a href=\"https://rs-nlw-planner.vercel.app/\" target=\"_blank\">Acesse a aplicação</a></button>\n\n<h2 class=\"lg:text-center\">Versão Mobile em Expo React Native</h2>\n<p>\nPara a versão mobile híbrida, destinada a dispositivos Android e iOS, optei por utilizar a API disponibilizada para o projeto. Além disso, otimizei a interface para oferecer uma experiência de usuário (UX) moderna e agradável, com foco em telas touch.\n</p>\n<p>\nComo principal recurso de otimização, utilizei o <a target=\"_blank\" href=\"https://tanstack.com/query/v5/docs/framework/react/overview\">React Query</a> para gerenciamento de estado e cache, reduzindo a frequência e o tamanho das requisições, resultando em uma aplicação mais performática.\n</p>"
+  }
+]
