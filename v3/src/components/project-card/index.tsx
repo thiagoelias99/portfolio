@@ -1,14 +1,21 @@
+"use client"
+
 import { ComponentProps } from "react"
 
 import SkillItem from "../skill-item"
 import { SectionParagraph, SectionSecondaryTitle } from "../typography"
 import { staticImagePath } from "@/data"
+import Image2 from "../../../public/images/rs-nlw-planner_cover.webp"
+import Image from "next/image"
 
 interface ProjectCardProps extends ComponentProps<'li'> {
   project: Project
 }
 
 export default function ProjectCard({ project, ...rest }: ProjectCardProps) {
+
+  console.log(Image2)
+
   return (
     <li
       className="w-full flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-10"

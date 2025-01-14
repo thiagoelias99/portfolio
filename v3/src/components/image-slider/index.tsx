@@ -3,6 +3,7 @@ import { Pagination, Autoplay, Navigation } from 'swiper/modules'
 import { cn } from "../../utils"
 import { staticImagePath } from "@/data"
 import { useMediaQuery } from "@reactuses/core"
+import Image from "next/image"
 
 interface ImageSliderProps extends SwiperProps {
   images?: {

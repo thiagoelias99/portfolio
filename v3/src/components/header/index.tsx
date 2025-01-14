@@ -4,7 +4,7 @@ import xIcon from "../../../public/icons/x.svg"
 import LinkItem from "./link-item"
 import Separator from "../separator"
 import Link from "next/link"
-
+import Image from "next/image"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -29,9 +29,9 @@ export default function Header() {
           className="w-6 h-6 sm:hidden">
           {
             menuOpen ? (
-              <img src={xIcon} alt="fechar menu" />
+              <Image src={xIcon} alt="fechar menu" />
             ) : (
-              <img src={menuIcon} alt="abrir menu" />
+              <Image src={menuIcon} alt="abrir menu" />
             )
           }
         </button>
