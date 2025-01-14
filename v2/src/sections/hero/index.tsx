@@ -21,7 +21,7 @@ export default function HeroSection({ title, description, link, linkLabel, class
       <SectionParagraph className="text-center">{description}</SectionParagraph>
       {link && linkLabel &&
         <LinkButton
-          href={link}
+          to={link}
         >
           {linkLabel}
         </LinkButton>}

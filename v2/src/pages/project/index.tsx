@@ -39,7 +39,7 @@ export default function ProjectPage() {
               stacks={project.allStacks}
             />
             <Section>
-              <LinkButton href="/projetos" className="sm:self-center">Ver outros projetos</LinkButton>
+              <LinkButton to="/projetos" className="sm:self-center">Ver outros projetos</LinkButton>
             </Section>
           </>
 

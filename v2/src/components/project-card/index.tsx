@@ -3,6 +3,7 @@ import { ComponentProps } from "react"
 import LinkButton from "../link"
 import SkillItem from "../skill-item"
 import { SectionParagraph, SectionSecondaryTitle } from "../typography"
+import { staticImagePath } from "@/data"
 
 interface ProjectCardProps extends ComponentProps<'li'> {
   project: Project
@@ -16,7 +17,7 @@ export default function ProjectCard({ project, ...rest }: ProjectCardProps) {
     >
       <img
         className="w-full lg:w-[60%] object-cover object-center aspect-square"
-        src={`/images/${project.images[0].src}`}
+        src={staticImagePath + project.images[0].src}
         alt={project.images[0].alt}
       />
       <div className="w-full py-4 -translate-y-20 lg:translate-y-0 flex flex-col justify-center items-center sm:gap-4">
@@ -27,7 +28,7 @@ export default function ProjectCard({ project, ...rest }: ProjectCardProps) {
             <SkillItem key={index}>{skill}</SkillItem>
           ))}
         </ul>
-        <LinkButton href={`/projetos/${project.slug}`}>Ver mais sobre</LinkButton>
+        <LinkButton to={`/projetos/${project.slug}`}>Ver mais sobre</LinkButton>
       </div>
     </li>
   )

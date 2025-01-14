@@ -27,7 +27,7 @@ export default function AboutSection() {
           <SectionParagraph>
             Com uma mentalidade orientada a resultados e uma paixão pela inovação, estou constantemente aprimorando minhas habilidades para acompanhar as tendências do mercado
           </SectionParagraph>
-          <LinkButton href="#contato">Entre em contato</LinkButton>
+          <LinkButton to="#contato">Entre em contato</LinkButton>
         </div>
         <div className="w-full flex flex-col items-center justify-start gap-4">
           <SectionSecondaryTitle
